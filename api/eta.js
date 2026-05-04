@@ -17,22 +17,38 @@ function handleToQuery(handle) {
   return handle
     .replace(/^globewest-/, '')
     .replace(/^globe-west-/, '')
-    .replace(/-copy$/, '')          // strip Norsu's "-copy" suffix on dupes
-    .replace(/-([0-9]+)$/, '')      // strip trailing -1, -2 etc
+    .replace(/-copy$/, '')
+    .replace(/-([0-9]+)$/, '')
     .replace(/-/g, ' ')
     .trim();
 }
 
 /**
+ * Decode HTML entities from a string (e.g. &lt; -> <, &quot; -> ")
+ */
+function decodeHtmlEntities(str) {
+  if (!str) return '';
+  return str
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&amp;/g, '&')
+    .replace(/&#x27;/g, "'")
+    .replace(/&#39;/g, "'");
+}
+
+/**
  * Parse the ETA text from GlobeWest's ss_gw_eta_label HTML field.
- * e.g. '<div ...><span ...>ETA - 14/05/26</span></div>' -> 'ETA 14/05/26'
+ * The field comes HTML-entity-encoded, e.g.:
+ *   &lt;div ...&gt;&lt;span id="eta-data"&gt;ETA - 14/05/26&lt;/span&gt;&lt;/div&gt;
+ * Returns normalised text like "ETA 14/05/26" or "In Stock".
  */
 function parseEtaLabel(html) {
   if (!html) return null;
-  // Extract text content from the span#eta-data or any span with class "data"
-  const match = html.match(/id="eta-data"[^>]*>([^<]+)</) ||
-                html.match(/class="data"[^>]*>([^<]+)</) ||
-                html.match(/>([^<]+)</);
+  const decoded = decodeHtmlEntities(html);
+  const match = decoded.match(/id="eta-data"[^>]*>([^<]+)</) ||
+                decoded.match(/class="data"[^>]*>([^<]+)</) ||
+                decoded.match(/>([^<]+)</);
   if (!match) return null;
   const raw = match[1].trim();
   // Normalise "ETA - 14/05/26" -> "ETA 14/05/26"
@@ -40,16 +56,17 @@ function parseEtaLabel(html) {
 }
 
 /**
- * Parse status from ETA label HTML class name.
- * old-eta-date -> "eta", old-in-stock -> "in_stock", empty -> check text
+ * Parse status from ETA label HTML class name and text.
  */
 function parseStatus(html, etaText) {
   if (!html || !etaText) return 'unknown';
-  if (html.includes('old-eta-date')) return 'eta';
-  if (html.includes('old-in-stock')) return 'in_stock';
-  if (etaText && etaText.toLowerCase().includes('limited')) return 'limited_stock';
-  if (etaText && etaText.toLowerCase().includes('in stock')) return 'in_stock';
-  if (etaText && etaText.toLowerCase().includes('eta')) return 'eta';
+  const decoded = decodeHtmlEntities(html);
+  if (decoded.includes('old-eta-date')) return 'eta';
+  if (decoded.includes('old-in-stock')) return 'in_stock';
+  const lower = etaText.toLowerCase();
+  if (lower.includes('limited')) return 'limited_stock';
+  if (lower.includes('in stock')) return 'in_stock';
+  if (lower.includes('eta')) return 'eta';
   return 'unknown';
 }
 
