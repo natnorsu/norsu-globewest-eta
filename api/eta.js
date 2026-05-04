@@ -10,21 +10,31 @@ const SS_SITE_ID = 'xq8j7f';
 
 /**
  * Convert a Norsu product handle to a GlobeWest search query.
- * Strips the globewest- or globe-west- prefix, then replaces dashes with spaces.
- * e.g. "globewest-winona-occasional-chair-caramel-latte" -> "winona occasional chair caramel latte"
+ * Strips common brand/store prefixes that Norsu prepends to handles,
+ * then replaces dashes with spaces.
+ *
+ * Examples:
+ *   "globewest-winona-occasional-chair-caramel-latte" -> "winona occasional chair caramel latte"
+ *   "globe-west-artie-buffet-powder-blue"             -> "artie buffet powder blue"
+ *   "ethnicraft-eleanor-dining-chair-powder-blue"     -> "eleanor dining chair powder blue"
  */
 function handleToQuery(handle) {
   return handle
+    // Strip known brand/store prefixes Norsu uses
     .replace(/^globewest-/, '')
     .replace(/^globe-west-/, '')
+    .replace(/^ethnicraft-/, '')
+    // Strip Norsu housekeeping suffixes
     .replace(/-copy$/, '')
     .replace(/-([0-9]+)$/, '')
+    // Convert dashes to spaces
     .replace(/-/g, ' ')
     .trim();
 }
 
 /**
  * Decode HTML entities from a string (e.g. &lt; -> <, &quot; -> ")
+ * SearchSpring returns the eta label HTML with entities encoded.
  */
 function decodeHtmlEntities(str) {
   if (!str) return '';
@@ -41,7 +51,7 @@ function decodeHtmlEntities(str) {
  * Parse the ETA text from GlobeWest's ss_gw_eta_label HTML field.
  * The field comes HTML-entity-encoded, e.g.:
  *   &lt;div ...&gt;&lt;span id="eta-data"&gt;ETA - 14/05/26&lt;/span&gt;&lt;/div&gt;
- * Returns normalised text like "ETA 14/05/26" or "In Stock".
+ * Returns normalised text like "ETA 14/05/26", "In Stock", or "Limited Stock".
  */
 function parseEtaLabel(html) {
   if (!html) return null;
