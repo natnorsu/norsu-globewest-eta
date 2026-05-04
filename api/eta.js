@@ -1,494 +1,162 @@
 const https = require('https');
 
-const ETA_MAP = {
-  'globewest-winona-occasional-chair-caramel-latte': 'winona-occasional-chair-caramel-latte-ch-win-occ',
-  'globewest-atlas-decagon-coffee-table-matt-ocean-marble': 'atlas-decagon-coffee-table-matt-ocean-marble-cto-atlas-dec',
-  'globewest-pippa-marble-coffee-table-natural-travertine': 'pippa-marble-coffee-table-natural-travertine-cto-pippa-mar-x',
-  'globewest-ponte-console-golden-white-marble': 'ponte-console-golden-white-marble-cons-pon-x',
-  'globewest-willa-marble-side-table-grey-marble-light-oak-copy': 'willa-marble-side-table-grey-marble-light-oak-lto-willa-mar-light-oak',
-  'globewest-august-1-drawer-bedside-porcelain': 'august-1-drawer-bedside-porcelain-side-aug-1dw',
-  'globewest-august-1-drawer-bedside-snowgum': 'august-1-drawer-bedside-snowgum-side-aug-1dw',
-  'globe-west-artie-kick-side-table-snowgum': 'artie-kick-side-table-snowgum-lto-art-kick',
-  'globewest-turner-barstool-vintage-matt-dark-brown-pu-matt-syrah': 'turner-barstool-vintage-matt-dark-brown-pu-matt-syrah-bs-turn-x-matt-syrah',
-  'globewest-matilda-barstool-linen-grey-matt-linen-grey': 'matilda-barstool-linen-grey-matt-linen-grey-bs-mat-x-matt-linen-grey',
-  'globewest-claudia-dining-chair-ore-speckle': 'claudia-dining-chair-ore-speckle-ch-clau',
-  'globe-west-seville-tile-round-dining-table-pearl-white': 'seville-tile-round-dining-table-pearl-white-dt-sevil-tile-rnd',
-  'globe-west-seville-tile-round-dining-table-burnt-sienna': 'seville-tile-round-dining-table-burnt-sienna-tile-dt-sevil-tile-rnd',
-  'globe-west-seville-tile-oval-dining-table-pearl-white': 'seville-tile-oval-dining-table-pearl-white-dt-sevil-tile-ovl',
-  'globe-west-seville-tile-oval-dining-table-burnt-sienna': 'seville-tile-oval-dining-table-burnt-sienna-tile-dt-sevil-tile-ovl',
-  'hanson-alo-planter-mint-wash': 'hanson-alo-planter-mint-wash-dec-han-alo-plt',
-  'hanson-alo-planter-white-speckle-tile': 'hanson-alo-planter-white-speckle-tile-dec-han-alo-plt',
-  'hanson-alo-planter-cocoa-tile': 'hanson-alo-planter-cocoa-tile-dec-han-alo-plt',
-  'globe-west-chloe-channel-buffet-bone': 'chloe-channel-buffet-bone-buf-chlo-chan',
-  'globe-west-chloe-channel-buffet-chai': 'chloe-channel-buffet-chai-buf-chlo-chan',
-  'pluto-buffet-powder-blue': 'pluto-buffet-powder-blue-buf-plu',
-  'globewest-willa-marble-buffet-satin-oak': 'willa-marble-buffet-grey-marble-satin-oak-buf-willa-mar-satin-oak',
-  'willa-marble-coffee-table-natural-travertine-light-oak': 'willa-marble-coffee-table-natural-travertine-light-oak-cto-willa-mar-light-oak',
-  'willa-marble-coffee-table-grey-marble-light-oak': 'willa-marble-coffee-table-grey-marble-light-oak-cto-willa-mar-light-oak',
-  'globe-west-willa-marble-bedside-grey-marble-satin-oak': 'willa-marble-bedside-grey-marble-satin-oak-side-willa-mar-1dw-satin-oak',
-  'globewest-ray-marble-side-table-natural-travertine-shell': 'ray-marble-side-table-natural-travertine-shell-lto-ray-mar-shell',
-  'globewest-ray-marble-side-table-matt-rouge-marble-smoked-ash': 'ray-marble-side-table-natural-travertine-shell-lto-ray-mar-shell',
-  'globewest-ray-coffee-table-natural-travertine-shell': 'ray-coffee-table-natural-travertine-shell-cto-ray-mar-shell',
-  'globewest-ray-coffee-table-matt-rouge-marble-smoked-ash': 'ray-coffee-table-matt-rouge-marble-smoked-ash-cto-ray-mar-smoked-ash',
-  'sketch-tye-marble-bedside-white-marble-light-oak': 'sketch-tye-marble-bedside-white-marble-light-oak-side-ske-tye-mar-light-oak',
-  'globe-west-elsie-bedside-matt-ocean-marble-natural-ash': 'elsie-bedside-matt-ocean-marble-natural-ash-side-elsie-x-natural-ash',
-  'globe-west-elsie-two-drawer-bedside-white-marble-natural-ash': 'elsie-two-drawer-bedside-white-marble-natural-ash-side-elsie-2dr-natural-ash',
-  'globe-west-august-3-drawer-bedside-snowgum': 'august-3-drawer-bedside-snowgum-side-aug-3dw',
-  'globe-west-oberon-crescent-marble-bedside-natural-travertine-shell': 'oberon-crescent-marble-bedside-natural-travertine-shell-side-ober-cres-mar-shell',
-  'globe-west-oberon-crescent-marble-bedside-matt-white-marble-natural-ash': 'oberon-crescent-marble-bedside-matt-white-marble-natural-ash-side-ober-cres-mar-natural-ash',
-  'globe-west-oberon-crescent-marble-bedside-matt-ocean-marble-smoked-ash': 'oberon-crescent-marble-bedside-matt-ocean-marble-smoked-ash-side-ober-cres-mar-smoked-ash',
-  'globewest-oberon-curve-set-of-2-side-table-shell': 'oberon-curve-set-of-2-side-table-shell-lt-ober-crv-s2',
-  'globewest-oberon-curve-set-of-2-side-table-natural-ash': 'oberon-curve-set-of-2-side-table-natural-ash-lt-ober-crv-s2',
-  'oberon-curve-set-of-2-side-table-thyme': 'oberon-curve-set-of-2-side-table-thyme-lt-ober-crv-s2',
-  'oberon-curve-marble-coffee-table-natural-travertine-shell': 'oberon-curve-marble-coffee-table-natural-travertine-shell-ct-ober-crv-mar-shell',
-  'globe-west-oberon-curve-marble-coffee-table-matt-storm-marble-matt-dark-oak': 'oberon-curve-marble-coffee-table-matt-storm-marble-matt-dark-oak-ct-ober-crv-mar-matt-dark-oak',
-  'globe-west-oberon-curve-marble-coffee-table-matt-ocean-marble-natural-ash': 'oberon-curve-marble-coffee-table-matt-ocean-marble-natural-ash-ct-ober-crv-mar-natural-ash',
-  'globewest-jules-dining-chair-lichen-tweed': 'jules-dining-chair-lichen-ch-jules',
-  'globewest-jules-dining-armchair-nimbus': 'jules-dining-armchair-nimbus-ch-jules-arm',
-  'globewest-jules-dining-armchair-brick': 'jules-dining-armchair-brick-ch-jules-arm',
-  'globewest-jenson-occasional-chair-cinnamon-speckle-natural-ash': 'jenson-occasional-chair-cinnamon-speckle-natural-ash-ch-jen-occ-natural-ash',
-  'globe-west-jenson-occasional-chair-desert-speckle-natural-ash': 'jenson-occasional-chair-desert-speckle-natural-ash-ch-jen-occ-natural-ash',
-  'globewest-jenson-occasional-chair-moss-tweed-snowgum': 'jenson-occasional-chair-moss-tweed-snowgum-ch-jen-occ-snowgum',
-  'globe-west-flo-occasional-chair-nimbus-natural-ash': 'flo-occasional-chair-nimbus-natural-ash-ch-flo-occ-natural-ash',
-  'globewest-flo-occasional-chair-hay-natural-ash': 'flo-occasional-chair-hay-natural-ash-ch-flo-occ-natural-ash',
-  'globe-west-seville-tile-side-table-pink-white': 'seville-tile-side-table-pink-white-lts-sevil-tile',
-  'globe-west-seville-tile-side-table-red-glazed-grc': 'seville-tile-side-table-red-glaze-lts-sevil-tile',
-  'globe-west-seville-tile-side-table-olive': 'seville-tile-side-table-olive-glaze-lts-sevil-tile',
-  'globe-west-seville-tile-side-table-honey': 'seville-tile-side-table-honey-lts-sevil-tile',
-  'globe-west-seville-tile-side-table-indigo': 'seville-tile-side-table-indigo-lts-sevil-tile',
-  'globe-west-seville-tile-round-coffee-table-pearl-white': 'seville-tile-round-coffee-table-pearl-white-cto-sevil-tile-rnd',
-  'globe-west-seville-tile-round-coffee-table-honey': 'seville-tile-round-coffee-table-honey-cto-sevil-tile-rnd',
-  'globewest-oberon-crescent-marble-buffet-natural-travertine-shell': 'oberon-crescent-marble-buffet-natural-travertine-shell-buf-ober-cres-mar-shell',
-  'globe-west-oberon-crescent-buffet-dusk': 'oberon-crescent-buffet-dusk-buf-ober-cres',
-  'globewest-oberon-crescent-marble-storage-unit-natural-travertine-shell': 'oberon-crescent-marble-storage-unit-natural-travertine-shell-buf-ober-cres-mar-sm-shell',
-  'globe-west-oberon-crescent-buffet-gloss-sage': 'oberon-crescent-buffet-gloss-sage-buf-ober-cres',
-  'globewest-oberon-crescent-marble-storage-unit-matt-ocean-marble-smoked-ash': 'oberon-crescent-marble-storage-unit-matt-ocean-marble-smoked-ash-buf-ober-cres-mar-sm-smoked-ash',
-  'globewest-willa-console-satin-oak': 'willa-console-satin-oak-cons-willa',
-  'globewest-willa-entertainment-unit-satin-oak': 'willa-entertainment-unit-satin-oak-tv-willa',
-  'willa-marble-side-table-natural-travertine-light-oak': 'willa-marble-side-table-natural-travertine-light-oak-lto-willa-mar-light-oak',
-  'globewest-amara-curve-side-table-natural-travertine': 'amara-curve-side-table-natural-travertine-lto-amar-crv',
-  'globewest-piccolo-dining-chair-owl-speckle-matt-syrah': 'piccolo-dining-chair-owl-speckle-matt-syrah-ch-picc-matt-syrah',
-  'globewest-piccolo-dining-chair-feather-speckle-matt-cashmere': 'piccolo-dining-chair-feather-speckle-matt-cashmere-ch-picc-matt-cashmere',
-  'globewest-piccolo-dining-chair-moss-tweed-black-metal': 'piccolo-dining-chair-moss-tweed-black-metal-ch-picc-black-metal',
-  'globewest-piccolo-barstool-feather-speckle-matt-cashmere': 'piccolo-barstool-feather-speckle-matt-cashmere-bs-picc-x-matt-cashmere',
-  'globewest-piccolo-barstool-moss-tweed-black-metal': 'piccolo-barstool-moss-tweed-black-metal-bs-picc-x-black-metal',
-  'globewest-piccolo-barstool-vintage-matt-dark-brown-pu-matt-syrah-1': 'piccolo-barstool-vintage-matt-dark-brown-pu-matt-syrah-bs-picc-x-matt-syrah',
-  'globewest-spider-leg-office-chair-carbon-tweed-matt-graphite': 'piccolo-spider-leg-office-chair-carbon-tweed-matt-graphite-ch-picc-spi-off-matt-graphite',
-  'globewest-spider-leg-office-chair-sandstone-pu-matt-cashmere': 'piccolo-spider-leg-office-chair-sandstone-pu-matt-cashmere-ch-picc-spi-off-matt-cashmere',
-  'ethnicraft-eleanor-dining-chair-powder-blue': 'eleanor-dining-chair-powder-blue-ch-elea',
-  'ethnicraft-eleanor-dining-chair-seashell': 'eleanor-dining-chair-seashell-ch-elea',
-  'globe-west-hanson-round-stool-white-speckle': 'hanson-round-stool-white-speckle-stl-han-rnd-x',
-  'globe-west-hanson-round-stool-dusty-rose': 'hanson-round-stool-dusty-rose-stl-han-rnd-x',
-  'globe-west-hanson-round-side-table-cherry': 'hanson-round-side-table-cherry-stl-han-rnd',
-  'globe-west-hanson-round-side-table-pale-blue': 'hanson-round-side-table-pale-blue-stl-han-rnd',
-  'globe-west-seville-tile-coffee-table-pearl-white': 'seville-tile-coffee-table-pearl-white-ctr-sevil-tile',
-  'globe-west-seville-tile-coffee-table-red-glazed-grc': 'seville-tile-coffee-table-red-glazed-grc-ctr-sevil-tile',
-  'globe-west-seville-podium-large-side-table-olive': 'seville-podium-large-side-table-olive-lto-sevil-podi-lg',
-  'globe-west-artie-wave-bedside-snowgum': 'artie-wave-bedside-snowgum-side-art-wav-x',
-  'artie-wave-bedside-bone': 'artie-wave-bedside-bone-side-art-wav-x',
-  'copy-of-globe-west-artie-open-bedside-eucalyptus': 'artie-open-bedside-eucalyptus-side-art-op',
-  'globe-west-artie-open-bedside-putty': 'artie-open-bedside-putty-side-art-op',
-  'globe-west-artie-open-bedside-powder-blue': 'artie-open-bedside-powder-blue-side-art-op',
-  'globe-west-artie-open-bedside-eucalyptus': 'artie-open-bedside-eucalyptus-side-art-op',
-  'globe-west-artie-buffet-putty': 'artie-buffet-putty-buf-art',
-  'globe-west-artie-buffet-natural-ash': 'artie-buffet-natural-ash-buf-art',
-  'globe-west-artie-buffet': 'artie-buffet-putty-buf-art',
-  'globe-west-artie-buffet-powder-blue': 'artie-buffet-powder-blue-buf-art',
-  'globe-west-artie-buffet-eucalyptus': 'artie-buffet-eucalyptus-buf-art',
-  'globe-west-artie-wave-side-table-putty': 'artie-wave-side-table-putty-lto-art-wav',
-  'globe-west-artie-wave-side-table-washed-terracotta': 'artie-wave-side-table-washed-terracotta-lto-art-wav',
-  'globe-west-artie-wave-side-table': 'artie-wave-side-table-putty-lto-art-wav',
-  'globe-west-laylah-loop-barstool-wheat-almond-milk': 'laylah-loop-barstool-wheat-almond-milk-bs-lay-lw-almond-milk',
-  'globe-west-laylah-loop-dining-chair-dijon-bone-powdercoated-metal': 'laylah-loop-dining-chair-dijon-bone-powdercoated-metal-ch-lay-bone-powdercoated-metal',
-  'globe-west-amara-round-leg-oval-coffee-table-natural-ocean-marble': 'amara-round-leg-oval-coffee-table-natural-ocean-marble-ct-amar-rnd-ovl',
-  'globe-west-artie-wave-dining-table-putty': 'artie-wave-dining-tables-putty-dt-art-wav-x',
-  'globe-west-petra-oval-dining-table-ivory': 'petra-oval-dining-table-ivory-dt-petra-oval-x',
-  'globe-west-petra-round-dining-table-ivory': 'petra-round-dining-table-ivory-dt-petra-rd-x',
-  'rufus-indra-bowl-onyx-green': 'rufus-lip-marble-bowl-onyx-marble-dec-ruf-lip-bowl',
-  'globe-west-tepih-curve-rug-dusty-rose': 'tepih-curve-rugs-dusty-rose-rug-tep-crv-x',
-  'globe-west-tepih-neptune-rug-seashell': 'tepih-neptune-rug-seashell-rug-tep-nept',
-  'globe-west-tepih-neptune-rug-olive': 'tepih-neptune-rug-olive-rug-tep-nept',
-  'globe-west-tepih-neptune-rug-ginger': 'tepih-neptune-rug-ginger-rug-tep-nept',
-  'globe-west-bower-frame-rug-rust': 'bower-frame-rug-rust-rug-bow-fra-x',
-  'globe-west-pier-breeze-dining-arm-chair-green': 'pier-breeze-dining-arm-chair-green-ch-pier-brz-arm',
-  'globe-west-pier-breeze-dining-arm-chair-black': 'pier-breeze-dining-arm-chair-black-ch-pier-brz-arm',
-  'globe-west-pier-breeze-dining-arm-chair-white': 'pier-breeze-dining-arm-chair-white-ch-pier-brz-arm',
-  'globe-west-granada-scoop-closed-weave-dining-chair-chalk-white': 'granada-scoop-closed-weave-dining-chair-chalk-white-ch-gran-sco-cl-white',
-  'globe-west-granada-scoop-closed-weave-dining-chair-licorice-licorice': 'granada-scoop-closed-weave-dining-chair-licorice-licorice-ch-gran-sco-cl-licorice',
-  'globe-west-easton-cupola-table-lamp-currant': 'easton-cupola-table-lamp-currant-lamp-easton-cup-tbl',
-  'globe-west-lorne-canopy-table-lamp-matt-black-oatmeal': 'lorne-canopy-table-lamp-matt-black-oatmeal-lamp-lorne-cpy-tbl-oatmeal',
-  'globe-west-lorne-canopy-table-lamp-matt-sand-oatmeal': 'lorne-canopy-table-lamp-matt-sand-oatmeal-lamp-lorne-cpy-tbl-oatmeal',
-  'globe-west-easton-curve-lamp-overcast': 'easton-curve-table-lamp-overcast-lamp-easton-crv-tbl',
-  'easton-canopy-table-lamp-white': 'easton-canopy-table-lamp-white-lamp-easton-cpy-tbl',
-  'easton-canopy-table-lamp': 'easton-canopy-table-lamp-black-lamp-easton-cpy-tbl',
-  'easton-canopy-table-lamp-black-1': 'easton-canopy-table-lamp-black-lamp-easton-cpy-tbl',
-  'easton-canopy-floor-lamp-black': 'easton-canopy-floor-lamp-black-metal-lamp-easton-cpy-flr',
-  'copy-of-globe-west-easton-dome-table-lamp-white': 'easton-dome-table-lamp-white-lamp-easton-dome-tbl',
-  'globe-west-easton-dome-table-lamp-white': 'easton-dome-table-lamp-white-lamp-easton-dome-tbl',
-  'globe-west-easton-dome-table-lamp-olive-green': 'easton-dome-table-lamp-olive-green-lamp-easton-dome-tbl',
-  'easton-dome-table-lamp': 'easton-dome-table-lamp-grey-lamp-easton-dome-tbl',
-  'easton-marble-table-lamp': 'easton-marble-table-lamp-grey-marble-lamp-easton-mar-tbl',
-  'globe-west-atlas-orbit-side-table-natural-ocean-marble': 'atlas-orbit-side-table-natural-ocean-marble-lto-atlas-orb',
-  'globe-west-august-3-drawer-bedside-porcelain-copy': 'august-3-drawer-bedside-porcelain-side-aug-3dw',
-  'globe-west-ina-occasional-chair-nimbus-1': 'ina-occasional-chair-nimbus-ch-ina-occ',
-  'globe-west-bonnie-occasional-chair-marigold': 'bonnie-occasional-chair-marigold-ch-bonn-occ',
-  'globe-west-amara-oval-leg-coffee-table-brown-vein-marble': 'amara-round-leg-coffee-table-brown-vein-marble-cto-amar-rnd',
-  'boden-stripe-bud-vase-blush': 'boden-stripe-bud-vase-blush-dec-bod-str-bud',
-  'juno-cloud-1-seater-left-arm-sofa-copy': 'juno-cloud-1-seater-left-arm-sofa-brick-sof-jun-cloud1s-lft-brc',
-  'juno-cloud-1-seater-right-arm-sofa': 'juno-cloud-1-seater-right-arm-sofa-brick-sof-jun-cloud1s-rit-brc',
-  'globe-chloe-channel-bedside-bone': 'chloe-channel-bedside-bone-side-chlo-chan',
-  'globe-west-verona-wave-mirror-antique-brass': 'verona-wave-mirror-antique-brass-mir-vero-wav',
-  'globe-west-atlas-orbit-coffee-table-natural-ocean-marble': 'atlas-orbit-coffee-table-natural-ocean-marble-cto-atlas-orb',
-  'globe-west-sketch-native-round-coffee-table-nougat-white': 'sketch-native-round-coffee-tables-nougat-terrazzo-light-oak-cto-ske-nat-x-light-oak',
-  'globe-west-huxley-curve-dining-table': 'huxley-curve-dining-tables-oak-dt-huxley-crv-x',
-  'globe-west-artie-outdoor-wave-dining-table-warm-sand': 'artie-outdoor-wave-dining-table-warm-sand-dt-art-out-wav-x',
-  'globe-west-artie-outdoor-wave-side-table-warm-sand': 'artie-outdoor-wave-side-table-warm-sand-lto-art-out-wav',
-  'globe-west-artie-outdoor-wave-side-table-black-speckle': 'artie-outdoor-wave-side-table-black-speckle-lto-art-out-wav',
-  'globe-west-artie-bedhead-natural-ash': 'artie-bedhead-natural-ash-bh-artie-x',
-  'globe-west-artie-clover-side-table-powder-blue': 'artie-clover-side-table-powder-blue-powder-blue-lt-art-clo-powder-blue',
-  'globe-west-artie-wave-console-bone': 'artie-wave-console-bone-cons-art-wav',
-  'globe-west-artie-outdoor-wave-coffee-table-sage-speckle': 'artie-outdoor-wave-coffee-table-sage-speckle-cto-art-out-wav',
-  'globe-west-artie-outdoor-wave-coffee-table-terracotta-speckle': 'artie-outdoor-wave-coffee-table-terracotta-speckle-cto-art-out-wav',
-  'globe-west-artie-outdoor-wave-coffee-table-warm-sand': 'artie-outdoor-wave-coffee-table-warm-sand-cto-art-out-wav',
-  'globe-west-artie-wave-coffee-table-black-oak': 'artie-wave-coffee-table-black-oak-cto-art-wav',
-  'globe-west-artie-wave-ripple-side-table-natural-ash': 'artie-wave-ripple-side-table-matt-white-marble-natural-ash-lto-art-wav-rip-natural-ash',
-  'globe-west-artie-entertainment-unit-putty': 'artie-entertainment-unit-putty-tv-art',
-  'globe-west-artie-entertainment-unit-natural-ash': 'artie-entertainment-unit-natural-ash-tv-art',
-  'globe-west-artie-ripple-entertainment-unit-whitewash': 'artie-ripple-entertainment-unit-whitewash-tv-art-rip',
-  'globe-west-livorno-luna-side-table': 'livorno-luna-side-table-warm-sand-lt-liv-luna',
-  'globe-west-livorno-cafe-table-outdoor': 'livorno-cafe-table-white-speckle-dt-liv-caf-2s',
-  'globe-west-kennedy-tenner-occasional-chair-misty-blue-velvet': 'kennedy-tenner-occasional-chair-misty-blue-velvet-ch-ken-ten-occ',
-  'globe-west-kennedy-tenner-occasional-chair-beige-boucle': 'kennedy-tenner-occasional-chair-beige-boucle-ch-ken-ten-occ',
-  'globe-west-kennedy-tenner-occasional-chair-soft-moss-velvet': 'kennedy-tenner-occasional-chair-soft-moss-velvet-ch-ken-ten-occ',
-  'globe-west-benjamin-ripple-oval-dining-table-black': 'benjamin-ripple-oval-dining-tables-matt-black-dt-ben-rip-ovl-x',
-  'globe-west-benjamin-ripple-oval-dining-table-oak': 'benjamin-ripple-oval-dining-tables-natural-ash-dt-ben-rip-ovl-x',
-  'globe-west-benjamin-ripple-oval-dining-table': 'benjamin-ripple-oval-dining-tables-putty-dt-ben-rip-ovl-x',
-  'globe-west-benjamin-ripple-buffet-natural-ash': 'benjamin-ripple-buffet-natural-ash-buf-ben-rip',
-  'globe-west-benjamin-ripple-bedside-snowgum': 'benjamin-ripple-bedside-snowgum-side-ben-rip',
-  'globe-west-benjamin-ripple-bedside-matt-black': 'benjamin-ripple-bedside-matt-black-side-ben-rip',
-  'globe-west-benjamin-ripple-bedside-natural-ash': 'benjamin-ripple-bedside-natural-ash-side-ben-rip',
-  'natural-ash-benjamin-ripple-desk': 'benjamin-ripple-desk-snowgum-desk-ben-rip-x',
-  'globe-west-hugo-arc-occasional-chair-oat-boucle': 'hugo-arc-occasional-chair-oat-boucle-ch-hugo-arc-occ',
-  'copy-of-globe-west-hugo-bow-occasional-chair-grey-speckle-boucle-1': 'hugo-bow-occasional-chair-grey-speckle-boucle-ch-hugo-bow-occ',
-  'globe-west-classique-oval-dining-table-natural-ash': 'classique-oval-dining-table-natural-ash-dt-clas-ovl-x',
-  'globe-west-classique-oval-dining-table-matt-dark-oak': 'classique-oval-dining-table-matt-dark-oak-dt-clas-ovl-x',
-  'globe-west-classique-oval-small-shelf-console-natural-ash': 'classique-oval-small-shelf-console-natural-ash-cons-clas-ovl-shf-x',
-  'globe-west-classique-oval-small-shelf-console-matt-dark-oak': 'classique-oval-small-shelf-console-matt-dark-oak-cons-clas-ovl-shf-x',
-  'globe-west-classique-pedestal-side-table-oyster-ash': 'classique-pedestal-side-table-oyster-ash-lto-clas-ped',
-  'globe-west-classique-pedestal-side-table-natural-ash': 'classique-pedestal-side-table-natural-ash-lto-clas-ped',
-  'globe-west-oberon-crescent-buffet-natural-ash': 'oberon-crescent-buffet-natural-ash-buf-ober-cres',
-  'globe-west-oberon-crescent-entertainment-units': 'oberon-crescent-entertainment-units-smoked-ash-tv-ober-cres-x',
-  'globe-west-classique-oval-console-matt-dark-oak': 'classique-oval-console-matt-dark-oak-cons-clas-ovl',
-  'globe-west-classique-round-dining-table-natural-ash': 'classique-round-dining-tables-natural-ash-dt-clas-x',
-  'globe-west-classique-round-dining-table-matte-dark-oak': 'classique-round-dining-tables-matt-dark-oak-dt-clas-x',
-  'copy-of-classique-pedestal-coffee-table-oyster-ash': 'classique-pedestal-coffee-table-oyster-ash-cto-clas-ped',
-  'classique-pedestal-coffee-table-natural-ash': 'classique-pedestal-coffee-table-natural-ash-cto-clas-ped',
-  'copy-of-sketch-native-round-coffee-table': 'tolv-inlay-upholstered-dining-armchair-camel-leather-light-oak-ch-tolv-inlay-arm-uph-light-oak',
-  'globe-west-felix-fold-3-seater-sofa-evergreen': 'felix-fold-3-seater-sofa-evergreen-sof-fel-fld-3s',
-  'globe-west-felix-fold-3-seater-sofa': 'felix-fold-3-seater-sofa-rust-sof-fel-fld-3s',
-  'globe-west-tepih-bobble-rug-fog': 'tepih-bobble-rugs-fog-rug-tep-bob-x',
-  'globe-west-tepih-tide-rug-oyster': 'tepih-tide-rugs-oyster-rug-tep-tide-x',
-  'globe-west-tepih-tide-rug-marine': 'tepih-tide-rugs-marine-rug-tep-tide-x',
-  'globe-west-tepih-curve-rug-sand': 'tepih-curve-rugs-sand-rug-tep-crv-x',
-  'globe-west-tepih-neptune-rug-midnight': 'tepih-neptune-rug-midnight-rug-tep-nept',
-  'globe-west-tepih-neptune-rug-ocean-green': 'tepih-neptune-rug-ocean-green-rug-tep-nept',
-  'globe-west-tepih-neptune-rug-dusty-rose': 'tepih-neptune-rug-dusty-rose-rug-tep-nept',
-  'globe-west-tepih-neptune-rug-silver-grey': 'tepih-neptune-rug-silver-grey-rug-tep-nept',
-  'globe-west-bower-frame-rug-butter': 'bower-frame-rug-butter-rug-bow-fra-x',
-  'globe-west-bower-frame-rug-seafoam': 'bower-frame-rug-seafoam-rug-bow-fra-x',
-  'globe-west-bower-frame-rug-moss': 'bower-frame-rug-moss-rug-bow-fra-x',
-  'globe-west-bower-frame-rug-cloud': 'bower-frame-rug-cloud-rug-bow-fra-x',
-  'globe-west-amara-round-leg-coffee-table-brown-vein-marble': 'amara-round-leg-coffee-table-brown-vein-marble-cto-amar-rnd',
-  'globe-west-granada-sleigh-dining-chair-white': 'granada-sleigh-dining-chair-white-ch-gran-sle',
-  'globe-west-granada-sleigh-barstool': 'granada-sleigh-barstool-moss-bs-gran-sle',
-  'globe-west-sketch-tami-barstool-black-onyx': 'sketch-tami-barstool-white-bs-ske-tami-x',
-  'globe-west-sketch-tami-barstool-light-oak': 'sketch-tami-barstool-white-bs-ske-tami-x',
-  'globe-west-sketch-tami-barstool-white': 'sketch-tami-barstool-white-bs-ske-tami-x',
-  'globe-west-alden-barstool-copeland-birch-white': 'alden-barstool-copeland-birch-white-bs-alden-white',
-  'globe-west-everly-barstool-linen-grey-matt-linen-grey': 'everly-barstool-linen-grey-matt-linen-grey-bs-ever-x-matt-linen-grey',
-  'globewest-sophia-barstool-oregano-black-metal': 'sophia-barstool-oregano-black-metal-bs-soph-x-black-metal',
-  'sketch-pinta-upholstered-barstool-woven-red-clay-light-oak': 'tolv-pinta-upholstered-barstool-woven-red-clay-light-oak-bs-ske-pin-uph-x-light-oak',
-  'globewest-sophia-barstool-copeland-birch-sandstone-pu': 'sophia-barstool-copeland-birch-sandstone-pu-bs-soph-x-sandstone-pu',
-  'globe-west-huxley-curve-dining-table-black-oak': 'seb-curve-dining-table-black-oak-dt-seb-crv-x',
-  'globe-west-lorne-ball-table-lamp-nude-sand-white': 'lorne-ball-table-lamp-nude-sand-white-lamp-lorne-ball-tbl-white',
-  'globewest-easton-curve-lamp-frappe': 'easton-curve-table-lamp-frappe-lamp-easton-crv-tbl',
-  'globewest-easton-curve-lamp-elm': 'easton-axel-desk-lamp-elm-lamp-easton-axe-dsk',
-  'globewest-axel-desk-lamp-matt-ivory': 'easton-axel-desk-lamp-matt-ivory-lamp-easton-axe-dsk',
-  'globe-west-bower-frame-rug-rose': 'bower-frame-rug-rose-rug-bow-fra-x',
-  'copy-of-mauritius-wing-occasional-chair-espresso': 'mauritius-wing-occasional-chair-espresso-ch-maur-wing-occ',
-  'mauritius-wing-occasional-chair-moss': 'mauritius-wing-occasional-chair-moss-ch-maur-wing-occ',
-  'globe-west-frankie-coffee-table-gloss-fossil': 'frankie-coffee-table-gloss-fossil-cts-frank',
-  'globe-west-sidney-peak-sofa-caper-velvet': 'sidney-peak-3-seater-sofa-caper-velvet-sof-sid-peak3s',
-  'globe-west-lorne-pebble-table-lamp-white-sand-ivory': 'lorne-pebble-table-lamp-white-sand-ivory-lamp-lorne-peb-tbl-ivory',
-  'sophia-dining-chair-oregano-black': 'sophia-dining-chair-oregano-black-ch-soph-black',
-  'easton-canopy-floor-lamp-elm': 'easton-canopy-floor-lamp-elm-lamp-easton-cpy-flr',
-  'carlo-dining-chair-linen-grey': 'carlo-dining-chair-linen-grey-ch-carl',
-  'sketch-odd-upholstered-barstool-camel-leather-light-oak': 'sketch-odd-upholstered-barstool-camel-black-bs-ske-odd-uph-x-black',
-  'artie-buffet-twilight': 'artie-buffet-twilight-buf-art',
-  'globe-west-artie-open-bedside-chai': 'artie-open-bedside-chai-side-art-op',
-  'globe-west-benjamin-ripple-desk-snowgum': 'benjamin-ripple-desk-snowgum-desk-ben-rip-x',
-  'montana-raft-dining-table-aged-teak': 'montana-raft-dining-table-aged-teak-dt-mont-raft-x',
-  'granada-butterfly-dining-chair-white': 'granada-butterfly-dining-chair-white-ch-gran-but',
-  'seb-round-coffee-table-rope': 'seb-round-coffee-table-rope-cto-seb-x',
-  'seb-balance-coffee-table-oak': 'seb-balance-coffee-table-oak-ct-seb-bal-x',
-  'kennedy-tenner-occasional-chair-blue-charcoal-velvet': 'kennedy-tenner-occasional-chair-blue-charcoal-velvet-ch-ken-ten-occ',
-  'riley-office-chair-khaki-grey-vintage-matt-green-pu': 'riley-office-chair-khaki-grey-vintage-matt-green-pu-ch-ril-off-vintage-matt-green-pu',
-  'amara-curve-side-table-matt-white-marble': 'amara-curve-side-table-matt-white-marble-lto-amar-crv',
-  'kip-occasional-chair-leek-green-natural-ash': 'kip-occasional-chair-leek-green-natural-ash-ch-kip-occ-natural-ash',
-  'willa-marble-side-table-grey-marble-light-oak': 'willa-marble-side-table-grey-marble-light-oak-lto-willa-mar-light-oak',
-  'hugo-vera-sofa-chair-oat-boucle': 'hugo-vera-sofa-chair-oat-boucle-sof-hugo-vera1s',
-  'sidney-peak-sofa-chair-caper-velvet': 'sidney-peak-sofa-chair-caper-velvet-sof-sid-peak1s',
-  'pluto-buffet-porcelain': 'pluto-buffet-porcelain-buf-plu',
-  'verona-pillar-side-table-latte-antique-brass': 'verona-pillar-side-table-latte-antique-brass-lto-vero-pil-antique-brass',
-  'jules-dining-chair-sandcastle-tweed': 'jules-dining-chair-sandcastle-tweed-ch-jules',
-  'kip-occasional-chair-white-bark-natural-ash': 'kip-occasional-chair-white-bark-natural-ash-ch-kip-occ-natural-ash',
-  'edwin-spider-leg-office-chair-pistachio-bone-powdercoated-metal': 'edwin-spider-leg-office-chair-pistachio-bone-powdercoated-metal-ch-edwin-spi-off-bone-powdercoated-metal',
-  'frankie-dining-table-sage': 'frankie-dining-table-sage-dt-frank-x',
-  'matilda-dining-chair-linen-grey-grey-metal': 'matilda-dining-chair-linen-grey-grey-metal-ch-mat-grey-metal',
-  'linea-oslo-oval-dining-table-new-oak': 'linea-oslo-oval-dining-table-new-oak-dt-lin-oslo-ovl-x',
-  'globe-west-seb-pedestal-coffee-table-oak': 'seb-pedestal-coffee-table-oak-ct-seb-ped-x',
-  'amara-curve-side-table-matt-ocean-marble': 'amara-curve-side-table-matt-ocean-marble-lto-amar-crv',
-  'kin-2-drawer-4-door-buffet-natural-ash-shell': 'kin-2-drawer-4-door-buffet-natural-ash-shell-buf-kin-2dw4dr',
-  'sketch-pinta-dining-chair-pecan-leather-light-oak': 'sketch-pinta-dining-chair-pecan-leather-black-onyx-ch-ske-pin-uph-black-onyx',
-  'globe-west-seb-coffee-table-oak': 'seb-coffee-table-oak-cto-seb-x',
-  'pablo-marble-side-table-natural-ash-natural-brown-vein-marble': 'pablo-marble-side-table-natural-ash-natural-brown-vein-marble-lto-pab-natural-brown-vein-marble',
-  'rufus-indra-goblet-bowl-green-onyx': 'rufus-indra-goblet-bowl-green-onyx-dec-ruf-indra-gob-bowl',
-  'petal-ottoman-copeland-olive': 'petal-ottoman-copeland-olive-ott-pet',
-  'globe-west-floyd-desk-natural-ash': 'floyd-desk-natural-ash-desk-flo',
-  'globe-west-henry-entertainment-unit-light-oak': 'henry-entertainment-unit-light-oak-tv-henry-x',
-  'globe-west-artie-open-bedside-natural-ash': 'artie-open-bedside-natural-ash-side-art-op',
-  'globe-west-floyd-dining-table-natural-ash-veneer': 'floyd-dining-table-natural-ash-veneer-dt-floyd-8s-natural-ash-veneer',
-  'classique-oval-small-shelf-console-fossil': 'classique-oval-small-shelf-console-fossil-cons-clas-ovl-shf-x',
-  'kip-occasional-chair-nimbus-natural-ash': 'kip-occasional-chair-nimbus-natural-ash-ch-kip-occ-natural-ash',
-  'globe-west-tobi-occasional-chair-hay': 'tobi-occasional-chair-hay-ch-tobi-occ',
-  'rowan-occasional-chair-copeland-hazel-black-metal': 'rowan-occasional-chair-copeland-hazel-black-metal-ch-rowan-occ-black-metal',
-  'frankie-dining-table-fossil': 'frankie-dining-table-fossil-dt-frank-x',
-  'globe-west-pippa-side-table-natural-travertine': 'pippa-side-table-natural-travertine-lto-pippa-mar',
-  'globe-west-tobi-occasional-chair-noyack-orchid': 'tobi-occasional-chair-noyack-orchid-ch-tobi-occ',
-  'globe-west-hugo-vera-4-seater-sofa-oat-boucle': 'hugo-vera-4-seater-sofa-oat-boucle-sof-hugo-vera4s',
-  'globe-west-turner-barstool-birch-boucle-bone-powdercoated-metal': 'turner-barstool-birch-boucle-bone-powdercoated-metal-bs-turn-x-bone-powdercoated-metal',
-  'boden-stripe-bud-vase-sage': 'boden-stripe-bud-vase-sage-dec-bod-str-bud',
-  'globe-west-seb-oval-four-leg-dining-table-oak-various-sizes': 'seb-oval-four-leg-dining-table-oak-dt-seb-ovl-4l-x',
-  'boden-stripe-vase-sage': 'boden-stripe-vase-sage-dec-bod-str-vase-x',
-  'boden-stripe-vase-wide-sage': 'boden-stripe-vase-sage-dec-bod-str-vase-x',
-  'frankie-dining-table-natural-ash': 'frankie-dining-table-sage-dt-frank-x',
-  'globe-west-seb-oval-dining-table-walnut-various-sizes': 'seb-oval-dining-table-walnut-dt-seb-ovl-x',
-  'globe-west-laylah-loop-dining-chair-copeland-dusk-bone-powdercoated-metal': 'laylah-loop-dining-chair-copeland-dusk-bone-powdercoated-metal-ch-lay-bone-powdercoated-metal',
-  'globe-west-laylah-loop-dining-chair-powder-blue-bone-powdercoated-metal': 'laylah-loop-dining-chair-powder-blue-bone-powdercoated-metal-ch-lay-bone-powdercoated-metal',
-  'globe-west-easton-shelter-floor-lamp-pearl-stone': 'easton-shelter-floor-lamp-pearl-stone-lamp-easton-shel-flr',
-  'globe-west-easton-shelter-table-lamp-pearl-stone': 'easton-shelter-table-lamp-pearl-stone-lamp-easton-shel-tbl',
-  'olsen-dining-chair-sandcastle-tweed-light-oak': 'olsen-dining-chair-sandcastle-tweed-light-oak-ch-olsen-light-oak',
-  'frankie-entertainment-unit-fossil': 'frankie-entertainment-unit-fossil-tv-frank',
-  'camille-marble-coffee-table-matt-white-marble-natural-ash': 'camille-marble-coffee-table-matt-white-marble-natural-ash-cto-cami-mar-natural-ash',
-  'globe-west-easton-tilt-table-lamp-white-marble-matt-brass': 'easton-tilt-table-lamp-white-marble-matt-brass-lamp-easton-tbl-tilt-matt-brass',
-  'globe-west-easton-ellipse-table-lamp-travertine-shell': 'easton-ellipse-table-lamp-travertine-shell-lamp-easton-ellip-tbl-shell',
-  'globe-west-easton-ellipse-table-lamp-travertine-shell-copy': 'easton-ellipse-table-lamp-travertine-shell-lamp-easton-ellip-tbl-shell',
-  'globe-west-easton-easton-arch-table-lamp-clay': 'easton-arch-table-lamp-clay-lamp-easton-arch-tbl',
-  'globe-west-easton-easton-arch-table-lamp-birch': 'easton-arch-table-lamp-birch-lamp-easton-arch-tbl',
-  'globe-west-easton-button-table-lamp-berry-burgundy': 'easton-button-table-lamp-berry-burgundy-lamp-easton-but-tbl-burgundy',
-  'globe-west-lorne-pebble-table-lamp-terracotta-oat': 'lorne-pebble-table-lamp-terracotta-oat-lamp-lorne-peb-tbl-oat',
-  'globe-west-artie-wave-console-bone-copy': 'artie-wave-console-bone-cons-art-wav',
-  'globe-west-pearce-marble-bedside-bone': 'pearce-marble-bedside-bone-side-pearce-mar',
-  'globe-west-easton-cupola-table-lamp-petrol': 'easton-cupola-table-lamp-petrol-lamp-easton-cup-tbl',
-  'easton-canopy-table-lamp-burgundy': 'easton-canopy-table-lamp-burgundy-lamp-easton-cpy-tbl',
-  'globe-west-bloom-oval-dining-table-smoked-ash': 'bloom-oval-dining-table-smoked-ash-dt-bloom-ovl-x',
-  'rufus-indra-goblet-bowl-oat-marble': 'rufus-indra-goblet-bowl-oat-marble-dec-ruf-indra-gob-bowl',
-  'rufus-rovine-set-of-2-bookends-travertine': 'rufus-rovine-set-of-2-bookends-travertine-dec-ruf-rov-book-s2',
-  'benjamin-ripple-round-dining-tables-putty': 'benjamin-ripple-round-dining-tables-putty-dt-ben-rip-rd-x',
-  'globe-west-elsie-coffee-table-matt-ocean-marble-natural-ash': 'elsie-coffee-table-matt-ocean-marble-natural-ash-cto-elsie-natural-ash',
-  'globe-west-ina-occasional-chair-nimbus': 'ina-occasional-chair-nimbus-ch-ina-occ',
-  'globe-west-benjamin-ripple-grand-desk-putty': 'benjamin-ripple-grand-desk-putty-desk-ben-rip-grd',
-  'hanson-alo-planter-moonstone': 'hanson-alo-planter-moonstone-dec-han-alo-plt',
-  'globe-west-daisy-spider-leg-office-chair-fawn-matt-cashmere': 'daisy-spider-leg-office-chair-fawn-matt-cashmere-ch-daisy-spi-off-matt-cashmere',
-  'globe-west-benjamin-ripple-dresser-putty': 'benjamin-ripple-dresser-putty-dress-ben-rip-x',
-  'globe-west-trove-burl-side-table-light-burl': 'trove-burl-side-table-light-burl-lt-trov-brl',
-  'globe-west-sophia-dining-chair-ore-speckle-matt-latte-1': 'sophia-dining-chair-ore-speckle-matt-latte-ch-soph-matt-latte',
-  'globe-west-august-3-drawer-bedside-porcelain': 'august-3-drawer-bedside-porcelain-side-aug-3dw',
-  'atlas-decagon-side-table-matt-ocean-marble': 'atlas-decagon-side-table-matt-ocean-marble-lto-atlas-dec',
-  'jules-dining-chair-pebble-tweed': 'jules-dining-chair-pebble-tweed-ch-jules',
-  'leon-dining-table-porcelain': 'leon-dining-table-porcelain-dt-leon-x',
-  'globewest-winona-occasional-chair-willow': 'winona-occasional-chair-willow-ch-win-occ',
-  'globewest-zola-bench-seat-sand-speckle': 'zola-bench-seat-sand-speckle-ben-zola',
-  'globe-west-chloe-channel-console-chai': 'chloe-channel-console-chai-cons-chlo-chan',
-  'pluto-buffet-snowgum': 'pluto-buffet-snowgum-buf-plu',
-  'globe-west-kin-1-drawer-2-door-buffet-shell': 'kin-1-drawer-2-door-buffet-shell-buf-kin-1dw2dr',
-  'globe-west-elba-coffee-table-rope': 'elba-coffee-table-rope-ct-elb-x',
-  'boden-pearl-large-vase-mint': 'boden-pearl-large-vase-mint-dec-bod-perl-vase-lg',
-  'globe-west-seb-pedestal-side-table-oak-copy': 'seb-pedestal-side-table-oak-lt-seb-ped-x',
-  'globe-west-kennedy-tenner-2-seater-sofa-copeland-olive': 'kennedy-tenner-2-seater-sofa-copeland-olive-sof-ken-ten',
-  'globewest-boden-form-vase-large-olive-green': 'boden-form-vase-olive-green-dec-bod-frm-vase-x',
-  'globewest-boden-form-vase-medium-olive-green': 'boden-form-vase-olive-green-dec-bod-frm-vase-x',
-  'globe-west-magnus-console-porcelain': 'magnus-console-porcelain-cons-magn',
-  'globewest-atlas-slab-console-table-natural-ocean-marble': 'atlas-slab-console-table-natural-ocean-marble-cons-atlas-slab',
-  'globewest-tito-ottoman-ice-boucle': 'tito-ottoman-ice-boucle-ott-tito',
-  'globewest-amara-curve-coffee-table-natural-travertine': 'amara-curve-coffee-table-natural-travertine-cto-amar-crv',
-  'globewest-sand-drift-hand-painted-wall-art-dune': 'sand-drift-hand-painted-wall-art-dune-dec-wall-snd-drift-x',
-  'globewest-sand-shores-hand-painted-wall-art-dune': 'sand-shores-hand-painted-wall-art-dune-dec-wall-snd-shore-x',
-  'globewest-sunbeam-hand-painted-wall-art-honey-sepia': 'sunbeam-hand-painted-wall-art-honey-sepia-dec-wall-ssbeam-x',
-  'globewest-sandscape-hand-painted-wall-art-dune': 'sandscape-hand-painted-wall-art-dune-dec-wall-sandsc-x',
-  'globewest-chroma-mist-hand-painted-wall-art-shadow': 'chroma-mist-hand-painted-wall-art-shadow-dec-wall-chr-mis-x',
-  'globewest-lorne-canopy-table-lamp-snowgum-ivory': 'lorne-canopy-table-lamp-snowgum-ivory-lamp-lorne-cpy-tbl-ivory',
-  'globewest-almos-chubby-bed-ivory-boucle': 'almos-chubby-bed-ivory-boucle-bed-almos-chub-x',
-  'hanson-contour-large-vase-beach': 'hanson-contour-large-vase-beach-dec-han-con-vase-lg',
-  'globewest-lorne-pebble-table-lamp-powder-blue-oatmeal': 'lorne-pebble-table-lamp-powder-blue-oatmeal-lamp-lorne-peb-tbl-oatmeal',
-  'globe-west-easton-dome-table-lamp-burgundy-berry': 'easton-dome-table-lamp-burgundy-berry-lamp-easton-dome-tbl-berry',
-  'globewest-pinnacle-table-lamp-russet': 'easton-pinnacle-table-lamp-russet-oyster-grey-lamp-easton-pin-tbl-oyster-grey',
-  'pippa-coffee-table-chai': 'pippa-coffee-table-chai-cto-pippa-x',
-  'pippa-trio-coffee-table-porcelain': 'pippa-trio-coffee-table-porcelain-cto-pippa-tri-x',
-  'globewest-easton-collins-table-lamp-shell-ecru': 'easton-collins-table-lamp-shell-ecru-lamp-easton-coll-tbl-ecru',
-  'globewest-easton-collins-table-lamp-olive-green-ecru': 'easton-collins-table-lamp-olive-green-ecru-lamp-easton-coll-tbl-ecru',
-  'globewest-easton-ellipse-table-lamp-toffee-tuscan-marble': 'easton-ellipse-table-lamp-toffee-tuscan-marble-lamp-easton-ellip-tbl-tuscan-marble',
-  'globewest-easton-ellipse-table-lamp-olive-green-travertine': 'easton-ellipse-table-lamp-olive-green-travertine-lamp-easton-ellip-tbl-travertine',
-  'globewest-easton-marquee-floor-lamp-travertine-burgundy': 'easton-marquee-floor-lamp-travertine-burgundy-lamp-easton-marq-flr-burgundy',
-  'globewest-easton-marquee-floor-lamp-travertine-matt-ivory': 'easton-marquee-floor-lamp-travertine-matt-ivory-lamp-easton-marq-flr-matt-ivory',
-  'globewest-easton-curve-lamp-oyster-grey': 'easton-curve-table-lamp-oyster-grey-lamp-easton-crv-tbl',
-  'globewest-lorne-roan-table-lamp-white-sand-ivory': 'lorne-roan-table-lamp-white-sand-ivory-lamp-lorne-roa-tbl-ivory',
-  'globewest-lorne-post-table-lamp-light-grey-ivory': 'lorne-post-table-lamp-light-grey-ivory-lamp-lorne-post-tbl-ivory',
-  'globewest-trove-burl-bedside-light-burl': 'trove-burl-bedside-light-burl-side-trov-brl',
-  'globewest-emery-bodhi-table-lamp-dune-sand': 'emery-bodhi-table-lamp-dune-sand-lamp-emery-bodhi-tbl-sand',
-  'globewest-easton-aurora-table-lamp-mocha-travertine-latte': 'easton-aurora-table-lamp-mocha-travertine-latte-lamp-easton-aur-tbl-latte',
-  'globewest-easton-aurora-table-lamp-rainbow-sandstone-snow': 'easton-aurora-table-lamp-rainbow-sandstone-snow-lamp-easton-aur-tbl-snow',
-  'globewest-lorne-shore-table-lamp-sandy-chalk-ivory': 'lorne-shore-table-lamp-sandy-chalk-ivory-lamp-lorne-shor-tbl-ivory',
-  'globewest-easton-dome-floor-lamp-frappe': 'easton-dome-floor-lamp-frappe-lamp-easton-dome-flr',
-  'globewest-lorne-bronte-table-lamp-oatmeal-mocha-brown': 'lorne-bronte-table-lamp-oatmeal-mocha-brown-lamp-lorne-bront-tbl-mocha-brown',
-  'globewest-lorne-bronte-table-lamp-oatmeal-rustic-white': 'lorne-bronte-table-lamp-oatmeal-rustic-white-lamp-lorne-bront-tbl-rustic-white',
-  'globewest-easton-horizon-desk-lamp-travertine-taupe': 'easton-horizon-desk-lamp-travertine-taupe-lamp-easton-horz-dsk-taupe',
-  'globewest-easton-horizon-desk-lamp-white-mabrle-white': 'easton-horizon-desk-lamp-white-marble-white-lamp-easton-horz-dsk-white',
-  'pippa-side-table-cream-rose': 'pippa-side-table-cream-rose-lto-pippa-mar',
-  'globewest-puddle-side-table-natural-travertine': 'puddle-side-table-natural-travertine-lto-pud',
-  'globewest-piccolo-cantilever-dining-chair-copeland-honey-bone-powdercoated-metal': 'piccolo-cantilever-dining-chair-copeland-honey-bone-powdercoated-metal-ch-picc-cant-bone-powdercoated-metal',
-  'globewest-tolv-cove-dining-tables-light-oak': 'tolv-cove-dining-tables-light-oak-dt-ske-cove-x',
-  'globewest-winona-occasional-chair-ore-speckle': 'winona-occasional-chair-ore-speckle-ch-win-occ',
-  'globewest-granada-hourglass-side-table-black-fleck': 'granada-hourglass-side-table-black-fleck-lto-gran-hgl',
-  'globewest-luna-entertainment-unit-shell': 'luna-entertainment-unit-shell-tv-lun-x',
-  'globewest-theo-dining-chair-woodland': 'theo-dining-chair-woodland-ch-theo',
-  'globewest-pearce-desk-bone': 'pearce-desk-bone-desk-pearce-x',
-  'globewest-ruben-occasional-chair-soft-russet-barley': 'ruben-occasional-chair-soft-russet-barley-ch-ruben-occ-barley',
-  'globewest-valencia-weave-dining-armchair-carbon-grey': 'valencia-weave-dining-armchair-carbon-grey-ch-vale-weave-arm',
-  'globe-west-elsie-console-natural-ash': 'elsie-console-large-natural-ash-cons-elsie-x',
-  'globewest-ruben-occasional-chair-white-bark-sugar-velvet': 'ruben-occasional-chair-white-bark-sugar-velvet-ch-ruben-occ-sugar-velvet',
-  'globewest-piccolo-barstool-sandstone-pu-brushed-chrome': 'piccolo-barstool-sandstone-pu-brushed-chrome-bs-picc-x-brushed-chrome',
-  'boden-navire-large-vase-autumn': 'boden-navire-large-vase-autumn-dec-bod-navi-vase-lg',
-  'rufus-converge-sculpture-black-marble': 'rufus-converge-sculpture-black-marble-dec-ruf-con-scul',
-  'rufus-hedra-bowl-black-marble': 'rufus-hedra-bowl-black-marble-dec-ruf-hedr-bowl',
-  'boden-ridge-vase-marine': 'boden-ridge-vase-marine-dec-bod-rid-vase-x',
-  'globe-west-forme-hyacinth-vase-ivory': 'forme-hyacinth-vase-ivory-dec-fom-hyn-vase',
-  'globewest-tolv-inlay-upholstered-barstool-pecan-leather-light-oak': 'tolv-inlay-upholstered-barstool-pecan-leather-light-oak-bs-tolv-inlay-uph-x-light-oak',
-  'globewest-matilda-dining-chair-burgundy-matt-carob': 'matilda-dining-chair-burgundy-matt-carob-ch-mat-matt-carob',
-  'globewest-forme-maya-vase-white': 'forme-maya-vase-white-dec-fom-may-vase',
-  'globe-west-riley-piped-spider-leg-office-chair-feather-speckle': 'riley-piped-spider-leg-office-chair-feather-speckle-sandstone-pu-ch-ril-pip-spi-off-sandstone-pu',
-  'globewest-forme-hyacinth-vase-flaxen': 'forme-hyacinth-vase-flaxen-dec-fom-hyn-vase',
-  'globewest-forme-weave-vase-wheat': 'forme-weave-vase-wheat-dec-fom-wve-vase',
-  'globewest-leon-side-table-teal': 'leon-side-table-teal-lto-leon-x',
-  'globewest-artie-dresser-powder-blue': 'artie-dresser-powder-blue-dress-art-x',
-  'globewest-cabana-link-dining-armchair-linen-sand': 'cabana-link-dining-arm-chair-linen-sand-ch-caba-link-sand',
-  'globewest-easton-dome-floor-lamp-brick': 'easton-dome-floor-lamp-brick-lamp-easton-dome-flr',
-  'frankie-buffet-fossil-copy': 'frankie-buffet-fossil-buf-frank',
-  'globewest-rowan-occasional-chair-copeland-hazel-black-metal-copy': 'rowan-occasional-chair-copeland-hazel-black-metal-ch-rowan-occ-black-metal',
-  'globewest-lorne-canopy-table-lamp-shiraz-ivory': 'lorne-canopy-table-lamp-matt-black-oatmeal-lamp-lorne-cpy-tbl-oatmeal',
-  'globewest-leon-side-table-natural-ash': 'leon-side-table-natural-ash-lto-leon-x',
-  'pippa-coffee-table-porcelain': 'pippa-coffee-table-porcelain-cto-pippa-x',
-  'globewest-kennedy-sofa-3-seater-oatmeal-boucle': 'kennedy-sofa-chair-coal-sof-ken1s',
-  'natadora-pivot-coffee-table-light-oak': 'natadora-pivot-coffee-table-light-oak-cto-nat-piv',
-  'livorno-luna-side-table-sage-speckle': 'livorno-luna-side-table-sage-speckle-lt-liv-luna',
-  'venus-revolve-side-table-satin-ocean-marble': 'venus-revolve-side-table-satin-ocean-marble-lto-venus-rev-x',
-  'everly-barstool-carob-matt-carob': 'everly-barstool-carob-matt-carob-bs-ever-x-matt-carob',
-  'globe-west-willa-1-draw-bedside-satin-oak': 'willa-1-drawer-bedside-satin-oak-side-willa-1dw',
-  'rufus-indra-bowl-oat-marble': 'rufus-indra-large-bowl-oat-marble-dec-ruf-indra-bowl-x',
-  'globe-west-tepih-neptune-round-rug-ocean-green': 'tepih-neptune-round-rugs-ocean-green-rug-tep-nept-rd-x',
-  'globe-west-tepih-neptune-round-rug-ginger': 'tepih-neptune-round-rugs-ginger-rug-tep-nept-rd-x',
-  'globe-west-tepih-neptune-round-rug-dusty-rose': 'tepih-neptune-round-rugs-dusty-rose-rug-tep-nept-rd-x',
-  'globe-west-livorno-round-dining-table-indoor-outdoor-terracotta-speckle': 'livorno-round-dining-tables-terracotta-speckle-dt-liv-rnd-x',
-  'globe-west-livorno-round-side-table-indoor-outdoor-terracotta-speckle': 'livorno-round-side-table-terracotta-speckle-lt-liv-rnd',
-  'globe-west-livorno-round-dining-table-indoor-outdoor-black-speckle': 'livorno-round-dining-tables-black-speckle-dt-liv-rnd-x',
-  'globe-west-livorno-round-dining-table-indoor-outdoor-white-speckle': 'livorno-round-dining-tables-white-speckle-dt-liv-rnd-x',
-  'globe-west-livorno-round-dining-table-outdoor': 'livorno-round-dining-tables-grey-speckle-dt-liv-rnd-x',
-  'globe-west-livorno-round-side-table-outdoor': 'livorno-round-side-table-white-speckle-lt-liv-rnd',
-  'globe-west-livorno-round-side-table-indoor-outdoor-grey-speckle': 'livorno-round-side-table-grey-speckle-lt-liv-rnd',
-  'globe-west-livorno-round-side-table-indoor-outdoor-black-speckle': 'livorno-round-side-table-black-speckle-lt-liv-rnd',
-  'globe-west-tepih-dune-rug-olive': 'tepih-dune-rugs-olive-rug-tep-dun-x',
-  'globe-west-tepih-dune-rug-sacramento': 'tepih-dune-rugs-sacramento-rug-tep-dun-x',
-  'globe-west-granada-sleigh-barstool-liquorice': 'granada-sleigh-barstool-licorice-bs-gran-sle',
-  'globe-west-granada-sleigh-dining-chair-liquorice': 'granada-sleigh-dining-chair-licorice-ch-gran-sle',
-  'globe-west-benjamin-ripple-marble-dining-table-marble-black': 'benjamin-ripple-marble-dining-table-matt-white-marble-matt-black-dt-ben-rip-x-matt-black',
-  'globe-west-benjamin-ripple-buffet-black': 'benjamin-ripple-buffet-matt-black-buf-ben-rip',
-  'globe-west-daisy-spider-leg-office-chair-dijion': 'daisy-spider-leg-office-chair-dijon-white-ch-daisy-spi-off-white',
-  'natadora-slipper-modular-in-dark-teal-modular-sofa-3-modular-pieces': 'natadora-slipper-corner-sofa-dark-teal-sof-nat-slip-cnr-dktl',
-  'globewest-frankie-sage': 'frankie-coffee-table-gloss-sage-cts-frank',
-  'globe-west-hugo-marla-modular-sofa-copeland-honey': 'hugo-hugo-marla-copeland-honey',
-  'globe-west-livorno-tapered-cafe-table-outdoor-warm-sand': 'livorno-tapered-cafe-table-warm-sand-dt-liv-caf-tap-x',
-  'globe-west-tolv-pensive-occasional-chair-camel': 'tolv-pensive-3-seater-sofa-camel-light-oak-sof-tolv-pen3s-light-oak',
-  'option-set-418586-select-1': 'juno-cloud-round-corner-sofa-cashew-tweed-sof-jun-cloud-cnr-cash',
-  'option-set-418586-select-2': 'juno-cloud-1-seater-centre-sofa-cashew-tweed-sof-jun-cloud1s-ctr-cash',
-  'option-set-418586-select-3': 'juno-channel-ottoman-grey-speckle-boucle-sof-jun-chan-ott-gysbc',
-  'option-set-418586-select-4': 'juno-cloud-2-seater-arc-sofa-cashew-tweed-sof-jun-cloud2s-arc-cash',
-  'natural-ash-benjamin-ripple-bedside': 'benjamin-ripple-bedside-natural-ash-side-ben-rip',
-  'copy-of-globe-west-granada-butterfly-closed-weave-dining-chair-white': 'granada-butterfly-occasional-chair-white-ch-gran-but-occ',
-  'globe-west-juno-cloud-modular-sofa': 'juno-cloud-round-corner-sofa-cashew-tweed-sof-jun-cloud-cnr-cash'
-};
-
-const CACHE_TTL_MS = 30 * 60 * 1000;
+// Cache to avoid hammering SearchSpring on every page load
+// TTL: 30 minutes
 const cache = {};
+const CACHE_TTL = 30 * 60 * 1000;
 
-function fetchURL(url) {
-  return new Promise((resolve, reject) => {
-    const req = https.get(url, {
-      headers: { 'User-Agent': 'Mozilla/5.0 (compatible; NorsuETABot/1.0)', 'Accept': 'text/html' }
-    }, (res) => {
-      if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
-        return fetchURL(res.headers.location).then(resolve).catch(reject);
-      }
-      let data = '';
-      res.on('data', chunk => data += chunk);
-      res.on('end', () => resolve(data));
-    });
-    req.on('error', reject);
-    req.setTimeout(10000, () => { req.destroy(); reject(new Error('Timeout')); });
-  });
+// GlobeWest SearchSpring site ID
+const SS_SITE_ID = 'xq8j7f';
+
+/**
+ * Convert a Norsu product handle to a GlobeWest search query.
+ * Strips the globewest- or globe-west- prefix, then replaces dashes with spaces.
+ * e.g. "globewest-winona-occasional-chair-caramel-latte" -> "winona occasional chair caramel latte"
+ */
+function handleToQuery(handle) {
+  return handle
+    .replace(/^globewest-/, '')
+    .replace(/^globe-west-/, '')
+    .replace(/-copy$/, '')          // strip Norsu's "-copy" suffix on dupes
+    .replace(/-([0-9]+)$/, '')      // strip trailing -1, -2 etc
+    .replace(/-/g, ' ')
+    .trim();
 }
 
-function parseETA(html) {
-  const etaMatch = html.match(/id="eta-data">([^<]+)</);
-  const containerMatch = html.match(/product-eta-container ([^"]*?)"/);
-  if (!etaMatch) return null;
-  const etaText = etaMatch[1].trim();
-  const containerClass = containerMatch ? containerMatch[1].trim() : '';
-  let status = 'unknown';
-  if (containerClass.includes('in-stock') || etaText === 'In Stock') status = 'in_stock';
-  else if (etaText === 'Limited Stock') status = 'limited_stock';
-  else if (containerClass.includes('eta-date') || etaText.startsWith('ETA')) status = 'eta';
-  let etaDate = null;
-  const dateMatch = etaText.match(/(\d{2})\/(\d{2})\/(\d{2,4})/);
-  if (dateMatch) {
-    const [, day, month, year] = dateMatch;
-    const fullYear = year.length === 2 ? '20' + year : year;
-    etaDate = fullYear + '-' + month + '-' + day;
-  }
-  return { eta_text: etaText, eta_date: etaDate, status };
+/**
+ * Parse the ETA text from GlobeWest's ss_gw_eta_label HTML field.
+ * e.g. '<div ...><span ...>ETA - 14/05/26</span></div>' -> 'ETA 14/05/26'
+ */
+function parseEtaLabel(html) {
+  if (!html) return null;
+  // Extract text content from the span#eta-data or any span with class "data"
+  const match = html.match(/id="eta-data"[^>]*>([^<]+)</) ||
+                html.match(/class="data"[^>]*>([^<]+)</) ||
+                html.match(/>([^<]+)</);
+  if (!match) return null;
+  const raw = match[1].trim();
+  // Normalise "ETA - 14/05/26" -> "ETA 14/05/26"
+  return raw.replace(/ETA\s*-\s*/, 'ETA ').trim();
+}
+
+/**
+ * Parse status from ETA label HTML class name.
+ * old-eta-date -> "eta", old-in-stock -> "in_stock", empty -> check text
+ */
+function parseStatus(html, etaText) {
+  if (!html || !etaText) return 'unknown';
+  if (html.includes('old-eta-date')) return 'eta';
+  if (html.includes('old-in-stock')) return 'in_stock';
+  if (etaText && etaText.toLowerCase().includes('limited')) return 'limited_stock';
+  if (etaText && etaText.toLowerCase().includes('in stock')) return 'in_stock';
+  if (etaText && etaText.toLowerCase().includes('eta')) return 'eta';
+  return 'unknown';
+}
+
+/**
+ * Parse date from ETA text.
+ * e.g. "ETA 14/05/26" -> "2026-05-14"
+ */
+function parseDate(etaText) {
+  if (!etaText) return null;
+  const m = etaText.match(/(\d{1,2})\/(\d{1,2})\/(\d{2,4})/);
+  if (!m) return null;
+  const day = m[1].padStart(2, '0');
+  const month = m[2].padStart(2, '0');
+  const year = m[3].length === 2 ? '20' + m[3] : m[3];
+  return `${year}-${month}-${day}`;
+}
+
+/**
+ * Fetch product data from GlobeWest SearchSpring API.
+ * Returns { url, etaLabel, name } or throws.
+ */
+function fetchFromSearchSpring(query) {
+  return new Promise((resolve, reject) => {
+    const encoded = encodeURIComponent(query);
+    const path = `/api/search/search.json?siteId=${SS_SITE_ID}&q=${encoded}&resultsFormat=native&resultsPerPage=1`;
+    const options = {
+      hostname: 'api.searchspring.net',
+      path,
+      method: 'GET',
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (compatible; NorsuETA/1.0)',
+        'Accept': 'application/json',
+      },
+    };
+    const req = https.request(options, (res) => {
+      let data = '';
+      res.on('data', chunk => { data += chunk; });
+      res.on('end', () => {
+        try {
+          const json = JSON.parse(data);
+          const results = json.results || [];
+          if (!results.length) {
+            return reject(new Error('No results found for: ' + query));
+          }
+          const r = results[0];
+          resolve({
+            url: r.url,
+            etaLabel: r.ss_gw_eta_label || '',
+            name: r.name || r.title || '',
+          });
+        } catch (e) {
+          reject(new Error('Failed to parse SearchSpring response: ' + e.message));
+        }
+      });
+    });
+    req.on('error', reject);
+    req.setTimeout(8000, () => { req.destroy(); reject(new Error('SearchSpring timeout')); });
+    req.end();
+  });
 }
 
 module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
-  res.setHeader('Content-Type', 'application/json');
-  if (req.method === 'OPTIONS') return res.status(200).end();
-  const handle = (req.query.handle || '').toLowerCase().trim();
-  if (!handle) return res.status(400).json({ error: 'Missing ?handle= parameter' });
-  const slug = ETA_MAP[handle];
-  if (!slug) return res.status(404).json({ error: 'Handle not in ETA_MAP', handle });
-  const cached = cache[handle];
-  if (cached && (Date.now() - cached.fetchedAt) < CACHE_TTL_MS) {
-    return res.status(200).json({ ...cached.data, cached: true });
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
+  if (req.method === 'OPTIONS') {
+    return res.status(200).end();
   }
-  const globeWestURL = 'https://www.globewest.com.au/' + slug;
+
+  const handle = (req.query.handle || '').toLowerCase().trim();
+  if (!handle) {
+    return res.status(400).json({ error: 'Missing handle parameter' });
+  }
+
+  // Check cache
+  const now = Date.now();
+  if (cache[handle] && (now - cache[handle].ts) < CACHE_TTL) {
+    return res.status(200).json({ ...cache[handle].data, cached: true });
+  }
+
   try {
-    const html = await fetchURL(globeWestURL);
-    const parsed = parseETA(html);
-    if (!parsed) return res.status(502).json({ error: 'Could not parse ETA', url: globeWestURL });
-    const result = { handle, ...parsed, source_url: globeWestURL, fetched_at: new Date().toISOString(), cached: false };
-    cache[handle] = { data: result, fetchedAt: Date.now() };
-    return res.status(200).json(result);
+    const query = handleToQuery(handle);
+    const { url, etaLabel, name } = await fetchFromSearchSpring(query);
+    const etaText = parseEtaLabel(etaLabel);
+    const status = parseStatus(etaLabel, etaText);
+    const etaDate = parseDate(etaText);
+
+    const data = {
+      handle,
+      name,
+      eta_text: etaText,
+      eta_date: etaDate,
+      status,
+      source_url: url,
+      fetched_at: new Date().toISOString(),
+    };
+
+    cache[handle] = { data, ts: now };
+    return res.status(200).json({ ...data, cached: false });
+
   } catch (err) {
-    return res.status(502).json({ error: 'Fetch failed: ' + err.message });
+    return res.status(200).json({
+      handle,
+      error: err.message,
+      eta_text: null,
+      status: 'unknown',
+    });
   }
 };
