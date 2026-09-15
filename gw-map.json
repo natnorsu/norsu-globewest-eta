@@ -94,6 +94,11 @@
 "t": "Mauritius Wing Occasional Chair - Espresso",
 "u": "https://www.globewest.com.au/mauritius-wing-occasional-chair-espresso-ch-maur-wing-occ"
 },
+"easton-canopy-floor-lamp": {
+"s": "71263",
+"t": "Easton Canopy Floor Lamp - Matt Ivory",
+"u": "https://www.globewest.com.au/easton-canopy-floor-lamp-matt-ivory-lamp-easton-cpy-flr"
+},
 "easton-canopy-floor-lamp-black": {
 "s": "71265",
 "t": "Easton Canopy Floor Lamp - Black Metal",
@@ -674,6 +679,11 @@
 "t": "Hanson Round Side Table - Pale Blue",
 "u": "https://www.globewest.com.au/hanson-round-side-table-pale-blue-stl-han-rnd"
 },
+"globe-west-harbour-knot-outdoor-rug-tawny": {
+"s": "240808",
+"t": "Harbour Knot Rug - Tawny",
+"u": "https://www.globewest.com.au/harbour-knot-rug-tawny-rug-harb-knot-x"
+},
 "globe-west-hugo-marla-modular-sofa-copeland-honey": {
 "s": "136848",
 "t": "Hugo Marla Corner Sofa",
@@ -989,6 +999,11 @@
 "t": "Tepih Dune Rug - Sacramento",
 "u": "https://www.globewest.com.au/tepih-dune-rugs-sacramento-rug-tep-dun-x"
 },
+"globe-west-tepih-maren-rug-stone": {
+"s": "149034",
+"t": "Tepih Maren Rug - Stone",
+"u": "https://www.globewest.com.au/tepih-maren-rugs-stone-rug-tep-mrn-x"
+},
 "globe-west-tepih-neptune-round-rug-dusty-rose": {
 "s": "92370",
 "t": "Tepih Neptune Round Rug - Dusty Rose",
@@ -1038,11 +1053,6 @@
 "s": "38161",
 "t": "Tepih Neptune Rug - Silver Grey",
 "u": "https://www.globewest.com.au/tepih-neptune-rug-silver-grey-rug-tep-nept"
-},
-"globe-west-tepih-tide-rug-marine": {
-"s": "148594",
-"t": "Tepih Tide Rugs - Marine",
-"u": "https://www.globewest.com.au/tepih-tide-rugs-marine-rug-tep-tide-x"
 },
 "globe-west-tobi-occasional-chair-hay": {
 "s": "152889",
@@ -1143,6 +1153,11 @@
 "s": "295805",
 "t": "Cooper Office Chair - Cedar - Matt Sand",
 "u": "https://www.globewest.com.au/cooper-office-chair-cedar-matt-sand-ch-coop-off-matt-sand"
+},
+"globewest-delphi-pebble-coffee-table-outdoor-copper-brown": {
+"s": "274469",
+"t": "Delphi Pebble Medium Coffee Table - Copper Brown",
+"u": "https://www.globewest.com.au/delphi-pebble-medium-coffee-table-copper-brown-ct-delphi-pebb-md"
 },
 "globewest-easton-aurora-table-lamp-mocha-travertine-latte": {
 "s": "252259",
@@ -1599,6 +1614,11 @@
 "t": "Ruben Occasional Chair - White Bark - Sugar Velvet",
 "u": "https://www.globewest.com.au/ruben-occasional-chair-white-bark-sugar-velvet-ch-ruben-occ-sugar-velvet"
 },
+"globewest-saskia-side-table-lilac": {
+"s": "290799",
+"t": "Saskia Side Table - Lilac",
+"u": "https://www.globewest.com.au/saskia-side-table-lilac-lto-sask"
+},
 "globewest-seb-oval-desk-oak": {
 "s": "199229",
 "t": "Seb Oval Desk - Oak",
@@ -1608,6 +1628,16 @@
 "s": "211928",
 "t": "Seb Oval Desk - Walnut",
 "u": "https://www.globewest.com.au/seb-oval-desk-walnut-desk-seb-ovl-x"
+},
+"globewest-shoreline-3-seater-sofa-outdoor-sand-fleck-hickory": {
+"s": "287597",
+"t": "Shoreline Sofa Chair - Sand Fleck - Hickory",
+"u": "https://www.globewest.com.au/shoreline-sofa-chair-sand-fleck-hickory-sof-shor-1s-hickory"
+},
+"globewest-shoreline-sofa-chair-outdoor-sand-fleck-hickory": {
+"s": "287597",
+"t": "Shoreline Sofa Chair - Sand Fleck - Hickory",
+"u": "https://www.globewest.com.au/shoreline-sofa-chair-sand-fleck-hickory-sof-shor-1s-hickory"
 },
 "globewest-sophia-barstool-copeland-birch-sandstone-pu": {
 "s": "156452",
@@ -1639,6 +1669,11 @@
 "t": "Tepih Dune Round Rug - Oatmeal",
 "u": "https://www.globewest.com.au/tepih-dune-round-rug-oatmeal-rug-tep-dun-rd-x"
 },
+"globewest-tepih-everest-rug-wheat": {
+"s": "295310",
+"t": "Tepih Everest Rug - Wheat",
+"u": "https://www.globewest.com.au/tepih-everest-rug-wheat-rug-tep-ever"
+},
 "globewest-tepih-round-rug-ivory": {
 "s": "50296",
 "t": "Tepih Round Rugs - Ivory",
@@ -1659,6 +1694,11 @@
 "t": "Tolv Inlay Upholstered Barstool - Pecan Leather - Light Oak",
 "u": "https://www.globewest.com.au/tolv-inlay-upholstered-barstool-pecan-leather-light-oak-bs-tolv-inlay-uph-x-light-oak"
 },
+"globewest-tolv-islet-tall-side-table-light-oak": {
+"s": "291397",
+"t": "Tolv Islet Tall Side Table - Light Oak",
+"u": "https://www.globewest.com.au/tolv-islet-tall-side-table-light-oak-lt-tolv-islet-tl"
+},
 "globewest-trove-burl-bedside-light-burl": {
 "s": "152858",
 "t": "Trove Burl Bedside - Light Burl",
@@ -1678,6 +1718,11 @@
 "s": "196634",
 "t": "Turner Barstool - Vintage Matt Dark Brown PU - Matt Syrah",
 "u": "https://www.globewest.com.au/turner-barstool-vintage-matt-dark-brown-pu-matt-syrah-bs-turn-x-matt-syrah"
+},
+"globewest-valencia-string-barstool-outdoor-sand-jungle-green": {
+"s": "294708",
+"t": "Valencia String Barstool - Sand - Jungle Green",
+"u": "https://www.globewest.com.au/valencia-string-barstool-sand-jungle-green-bs-vale-strng-jungle-green"
 },
 "globewest-valencia-weave-dining-armchair-carbon-grey": {
 "s": "165763",
@@ -1918,6 +1963,11 @@
 "s": "187016",
 "t": "Seb Balance Coffee Table - Oak",
 "u": "https://www.globewest.com.au/seb-balance-coffee-table-oak-ct-seb-bal2-x"
+},
+"seb-oval-four-leg-dining-table-oak-2-6m": {
+"s": "187122",
+"t": "Seb Oval Four Leg Dining Table - Oak",
+"u": "https://www.globewest.com.au/seb-oval-four-leg-dining-table-oak-dt-seb-ovl-4l2-x"
 },
 "seb-pedestal-side-table-oak": {
 "s": "187126",
