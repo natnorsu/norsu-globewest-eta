@@ -44,6 +44,11 @@
 "t": "Benjamin Ripple Round Dining Tables - Putty",
 "u": "https://www.globewest.com.au/benjamin-ripple-round-dining-tables-putty-dt-ben-rip-rd-x"
 },
+"boden-birch-vase-sand-dune": {
+"s": "259927",
+"t": "Boden Birch Vase - Sand Dune",
+"u": "https://www.globewest.com.au/boden-birch-vase-sand-dune-dec-bod-bir-vase-x"
+},
 "boden-ridge-vase-marine": {
 "s": "104590",
 "t": "Boden Ridge Vase - Marine",
@@ -88,11 +93,6 @@
 "s": "87919",
 "t": "Easton Dome Table Lamp - Grey",
 "u": "https://www.globewest.com.au/easton-dome-table-lamp-grey-lamp-easton-dome-tbl"
-},
-"copy-of-mauritius-wing-occasional-chair-espresso": {
-"s": "29251",
-"t": "Mauritius Wing Occasional Chair - Espresso",
-"u": "https://www.globewest.com.au/mauritius-wing-occasional-chair-espresso-ch-maur-wing-occ"
 },
 "easton-canopy-floor-lamp": {
 "s": "71263",
@@ -344,11 +344,6 @@
 "t": "Atlas Orbit Side Table - Natural Ocean Marble",
 "u": "https://www.globewest.com.au/atlas-orbit-side-table-natural-ocean-marble-lto-atlas-orb"
 },
-"globe-west-august-3-drawer-bedside-porcelain-copy": {
-"s": "152888",
-"t": "Alva Occasional Chair - Soft Mauve",
-"u": "https://www.globewest.com.au/alva-occasional-chair-soft-mauve-ch-alva-occ"
-},
 "globe-west-august-3-drawer-bedside-snowgum": {
 "s": "169568",
 "t": "August 3 Drawer Bedside - Snowgum",
@@ -404,6 +399,21 @@
 "t": "Bloom Oval Dining Table - Smoked Ash",
 "u": "https://www.globewest.com.au/bloom-oval-dining-table-smoked-ash-dt-bloom-ovl-x"
 },
+"globe-west-bower-faris-rug-pumice": {
+"s": "154909",
+"t": "Bower Faris Rug - Pumice",
+"u": "https://www.globewest.com.au/bower-faris-rug-pumice-rug-bow-far-x"
+},
+"globe-west-bower-faris-rug-romaine": {
+"s": "154910",
+"t": "Bower Faris Rug - Romaine",
+"u": "https://www.globewest.com.au/bower-faris-rug-romaine-rug-bow-far-x"
+},
+"globe-west-bower-faris-rug-verde": {
+"s": "240608",
+"t": "Bower Faris Rug - Rossa",
+"u": "https://www.globewest.com.au/bower-faris-rug-rossa-rug-bow-far-x"
+},
 "globe-west-bower-frame-rug-butter": {
 "s": "148148",
 "t": "Bower Frame Rug - Butter",
@@ -419,6 +429,11 @@
 "t": "Bower Frame Rug - Moss",
 "u": "https://www.globewest.com.au/bower-frame-rug-moss-rug-bow-fra-x"
 },
+"globe-west-bower-frame-rug-orion": {
+"s": "157759",
+"t": "Bower Frame Rug - Orion",
+"u": "https://www.globewest.com.au/bower-frame-rug-orion-rug-bow-fra-x"
+},
 "globe-west-bower-frame-rug-rose": {
 "s": "149084",
 "t": "Bower Frame Rug - Rose",
@@ -433,6 +448,21 @@
 "s": "114226",
 "t": "Bower Frame Rug - Seafoam",
 "u": "https://www.globewest.com.au/bower-frame-rug-seafoam-rug-bow-fra-x"
+},
+"globe-west-bower-frame-rug-seaside-blue": {
+"s": "232207",
+"t": "Bower Frame Rug - Seaside Blue",
+"u": "https://www.globewest.com.au/bower-frame-rug-seaside-blue-rug-bow-fra-x"
+},
+"globe-west-bower-horizon-rug-evening-sand": {
+"s": "240720",
+"t": "Bower Horizon Rug - Evening Sand",
+"u": "https://www.globewest.com.au/bower-horizon-rug-evening-sand-rug-bow-horzn-x"
+},
+"globe-west-bower-jansen-rug-olive": {
+"s": "295314",
+"t": "Bower Jansen Rug - Olive",
+"u": "https://www.globewest.com.au/bower-jansen-rug-olive-rug-bow-jans-x"
 },
 "globe-west-bower-nora-rug-cocoa": {
 "s": "240713",
@@ -463,6 +493,11 @@
 "s": "240713",
 "t": "Bower Nora Rug - Pistachio",
 "u": "https://www.globewest.com.au/bower-nora-rug-pistachio-rug-bow-nor-x"
+},
+"globe-west-bower-vienna-rug-copper": {
+"s": "152454",
+"t": "Bower Vienna Rug - Copper",
+"u": "https://www.globewest.com.au/bower-vienna-rug-copper-rug-bow-vie-x"
 },
 "globe-west-chloe-channel-buffet-bone": {
 "s": "118494",
@@ -634,6 +669,11 @@
 "t": "Floyd Desk - Natural Ash",
 "u": "https://www.globewest.com.au/floyd-desk-natural-ash-desk-floyd"
 },
+"globe-west-floyd-dining-table-natural-ash-veneer": {
+"s": "152036",
+"t": "Floyd Dining Table - Natural Ash - Natural Ash",
+"u": "https://www.globewest.com.au/floyd-dining-table-natural-ash-natural-ash-dt-floyd-8s-natural-ash"
+},
 "globe-west-forme-hyacinth-vase-ivory": {
 "s": "220490",
 "t": "Forme Hyacinth Vase - Ivory",
@@ -679,10 +719,20 @@
 "t": "Hanson Round Side Table - Pale Blue",
 "u": "https://www.globewest.com.au/hanson-round-side-table-pale-blue-stl-han-rnd"
 },
+"globe-west-harbour-knot-outdoor-rug-misty-grey": {
+"s": "247258",
+"t": "Harbour Knot Rug - Misty Grey PET",
+"u": "https://www.globewest.com.au/harbour-knot-rug-misty-grey-pet-rug-harb-knot-x"
+},
 "globe-west-harbour-knot-outdoor-rug-tawny": {
 "s": "240808",
 "t": "Harbour Knot Rug - Tawny",
 "u": "https://www.globewest.com.au/harbour-knot-rug-tawny-rug-harb-knot-x"
+},
+"globe-west-harbour-limeria-outdoor-rug-camel": {
+"s": "232809",
+"t": "Harbour Limeria Rug - Camel",
+"u": "https://www.globewest.com.au/harbour-limeria-rug-camel-rug-harb-lim-x"
 },
 "globe-west-hugo-marla-modular-sofa-copeland-honey": {
 "s": "136848",
@@ -713,11 +763,6 @@
 "s": "141842",
 "t": "Juno Cloud 4-Seater Left L Shape - Moon Rock",
 "u": "https://www.globewest.com.au/sof-jun-cloud-4s-larm-ccnr-ctr-rarm-moro"
-},
-"globe-west-kennedy-tenner-occasional-chair-beige-boucle": {
-"s": "99597",
-"t": "Kennedy Tenner Occasional Chair - Beige Boucle",
-"u": "https://www.globewest.com.au/kennedy-tenner-occasional-chair-beige-boucle-ch-ken-ten-occ"
 },
 "globe-west-kennedy-tenner-occasional-chair-soft-moss-velvet": {
 "s": "99594",
@@ -783,11 +828,6 @@
 "s": "68317",
 "t": "Livorno Tapered Cafe Table - Warm Sand",
 "u": "https://www.globewest.com.au/livorno-tapered-cafe-table-warm-sand-dt-liv-caf-tap-x"
-},
-"globe-west-lorne-ball-table-lamp-nude-sand-white": {
-"s": "102935",
-"t": "Lorne Ball Table Lamp - Nude Sand - White",
-"u": "https://www.globewest.com.au/lorne-ball-table-lamp-nude-sand-white-lamp-lorne-ball-tbl-white"
 },
 "globe-west-lorne-canopy-table-lamp-matt-black-oatmeal": {
 "s": "102936",
@@ -869,11 +909,6 @@
 "t": "Petra Round Dining Table - Ivory",
 "u": "https://www.globewest.com.au/petra-round-dining-table-ivory-dt-petra-rd-x"
 },
-"globe-west-pier-breeze-dining-arm-chair-black": {
-"s": "149185",
-"t": "Pier Breeze Dining Armchair - Black",
-"u": "https://www.globewest.com.au/pier-breeze-dining-arm-chair-black-ch-pier-brz-arm"
-},
 "globe-west-pier-breeze-dining-arm-chair-green": {
 "s": "148833",
 "t": "Pier Breeze Dining Armchair - Green",
@@ -934,11 +969,6 @@
 "t": "Seville Tile Round Coffee Table - Pearl White",
 "u": "https://www.globewest.com.au/seville-tile-round-coffee-table-pearl-white-cto-sevil-tile-rnd"
 },
-"globe-west-seville-tile-round-dining-table-burnt-sienna": {
-"s": "178069",
-"t": "Seville Tile Round Dining Table - Burnt Sienna Tile - Burnt Sienna",
-"u": "https://www.globewest.com.au/seville-tile-round-dining-table-burnt-sienna-tile-burnt-sienna-dt-sevil-tile-rnd-burnt-sienna"
-},
 "globe-west-seville-tile-round-dining-table-pearl-white": {
 "s": "178070",
 "t": "Seville Tile Round Dining Table - Pearl White - Matt Pearl White",
@@ -979,6 +1009,26 @@
 "t": "Tepih Bobble Rugs - Fog",
 "u": "https://www.globewest.com.au/tepih-bobble-rugs-fog-rug-tep-bob-x"
 },
+"globe-west-tepih-boucle-rug-chai": {
+"s": "154503",
+"t": "Tepih Boucle Rug - Chai",
+"u": "https://www.globewest.com.au/tepih-boucle-rug-chai-rug-tep-bouc-x"
+},
+"globe-west-tepih-boucle-rug-silver": {
+"s": "154496",
+"t": "Tepih Boucle Rug - Silver",
+"u": "https://www.globewest.com.au/tepih-boucle-rug-silver-rug-tep-bouc-x"
+},
+"globe-west-tepih-bounty-rug-sand-dune": {
+"s": "295308",
+"t": "Tepih Bounty Rug - Sand Dune",
+"u": "https://www.globewest.com.au/tepih-bounty-rug-sand-dune-rug-tep-boun-x"
+},
+"globe-west-tepih-bounty-rug-terra": {
+"s": "295320",
+"t": "Tepih Bounty Rug - Terra",
+"u": "https://www.globewest.com.au/tepih-bounty-rug-terra-rug-tep-boun-x"
+},
 "globe-west-tepih-curve-rug-dusty-rose": {
 "s": "145110",
 "t": "Tepih Curve Rug - Dusty Rose",
@@ -988,6 +1038,11 @@
 "s": "109434",
 "t": "Tepih Curve Rug - Sand",
 "u": "https://www.globewest.com.au/tepih-curve-rugs-sand-rug-tep-crv-x"
+},
+"globe-west-tepih-dune-rug-oatmeal": {
+"s": "122664",
+"t": "Tepih Dune Rug - Oatmeal",
+"u": "https://www.globewest.com.au/tepih-dune-rugs-oatmeal-rug-tep-dun-x"
 },
 "globe-west-tepih-dune-rug-olive": {
 "s": "109429",
@@ -999,10 +1054,50 @@
 "t": "Tepih Dune Rug - Sacramento",
 "u": "https://www.globewest.com.au/tepih-dune-rugs-sacramento-rug-tep-dun-x"
 },
+"globe-west-tepih-eira-rug-ecru": {
+"s": "234707",
+"t": "Tepih Eira Rug - Ecru",
+"u": "https://www.globewest.com.au/tepih-eira-rug-ecru-rug-tep-eira-x"
+},
+"globe-west-tepih-eira-rug-forest-green": {
+"s": "246318",
+"t": "Tepih Eira Rug - Forest Green",
+"u": "https://www.globewest.com.au/tepih-eira-rug-forest-green-rug-tep-eira-x"
+},
+"globe-west-tepih-eira-rug-sepia": {
+"s": "241518",
+"t": "Tepih Eira Rug - Sepia",
+"u": "https://www.globewest.com.au/tepih-eira-rug-sepia-rug-tep-eira-x"
+},
+"globe-west-tepih-harmony-rug-butternut": {
+"s": "232813",
+"t": "Tepih Harmony Rug - Butternut",
+"u": "https://www.globewest.com.au/tepih-harmony-rug-butternut-rug-tep-hmy-x"
+},
+"globe-west-tepih-harmony-rug-soft-sand": {
+"s": "246022",
+"t": "Tepih Harmony Rug - Soft Sand",
+"u": "https://www.globewest.com.au/tepih-harmony-rug-soft-sand-rug-tep-hmy-x"
+},
+"globe-west-tepih-maren-rug-slate": {
+"s": "247359",
+"t": "Tepih Maren Rug - Slate",
+"u": "https://www.globewest.com.au/tepih-maren-rug-slate-rug-tep-mrn-x"
+},
 "globe-west-tepih-maren-rug-stone": {
 "s": "149034",
 "t": "Tepih Maren Rug - Stone",
 "u": "https://www.globewest.com.au/tepih-maren-rugs-stone-rug-tep-mrn-x"
+},
+"globe-west-tepih-milton-rug-fawn": {
+"s": "295307",
+"t": "Tepih Milton Rug - Fawn",
+"u": "https://www.globewest.com.au/tepih-milton-rug-fawn-rug-tep-milt-x"
+},
+"globe-west-tepih-neptune-round-rug-dove-grey": {
+"s": "92368",
+"t": "Tepih Neptune Round Rug - Dove Grey",
+"u": "https://www.globewest.com.au/tepih-neptune-round-rugs-dove-grey-rug-tep-nept-rd-x"
 },
 "globe-west-tepih-neptune-round-rug-dusty-rose": {
 "s": "92370",
@@ -1064,11 +1159,6 @@
 "t": "Tobi Occasional Chair - Noyack Orchid",
 "u": "https://www.globewest.com.au/tobi-occasional-chair-noyack-orchid-ch-tobi-occ"
 },
-"globe-west-trove-burl-side-table-light-burl": {
-"s": "152854",
-"t": "Trove Burl Side Table - Light Burl",
-"u": "https://www.globewest.com.au/trove-burl-side-table-light-burl-lt-trov-brl"
-},
 "globe-west-verona-wave-mirror-antique-brass": {
 "s": "106603",
 "t": "Verona Wave Mirror - Antique Brass",
@@ -1089,30 +1179,35 @@
 "t": "Amara Curve Side Table - Natural Travertine",
 "u": "https://www.globewest.com.au/amara-curve-side-table-natural-travertine-lto-amar-crv"
 },
+"globewest-andes-dining-table-mocha-oak": {
+"s": "269330",
+"t": "Andes Dining Table - Mocha Oak",
+"u": "https://www.globewest.com.au/andes-dining-table-mocha-oak-dt-andes-x"
+},
 "globewest-artie-dresser-powder-blue": {
 "s": "246138",
 "t": "Artie Dresser - Powder Blue",
 "u": "https://www.globewest.com.au/artie-dresser-powder-blue-dress-art-x"
+},
+"globewest-arturo-timber-leg-occasional-chair-caramel-weave-chestnut": {
+"s": "265717",
+"t": "Arturo Timber Leg Occasional Chair - Caramel Weave - Chestnut",
+"u": "https://www.globewest.com.au/arturo-timber-leg-occasional-chair-caramel-weave-chestnut-ch-arturo-tim-occ-chestnut"
+},
+"globewest-atlas-decagon-side-table-monica-red-marble": {
+"s": "279061",
+"t": "Atlas Decagon Side Table - Monica Red Marble",
+"u": "https://www.globewest.com.au/atlas-decagon-side-table-monica-red-marble-lto-atlas-dec"
 },
 "globewest-atlas-slab-console-table-natural-ocean-marble": {
 "s": "151495",
 "t": "Atlas Slab Console Table - Natural Ocean Marble",
 "u": "https://www.globewest.com.au/atlas-slab-console-table-natural-ocean-marble-cons-atlas-slab"
 },
-"globewest-august-1-drawer-bedside-porcelain": {
-"s": "169567",
-"t": "August 1 Drawer Bedside - Porcelain",
-"u": "https://www.globewest.com.au/august-1-drawer-bedside-porcelain-side-aug-1dw"
-},
 "globewest-august-1-drawer-bedside-snowgum": {
 "s": "152029",
 "t": "August 1 Drawer Bedside - Snowgum",
 "u": "https://www.globewest.com.au/august-1-drawer-bedside-snowgum-side-aug-1dw"
-},
-"globewest-axel-desk-lamp-matt-ivory": {
-"s": "133788",
-"t": "Easton Axel Desk Lamp - Matt Ivory",
-"u": "https://www.globewest.com.au/easton-axel-desk-lamp-matt-ivory-lamp-easton-axe-dsk"
 },
 "globewest-boden-form-vase-large-olive-green": {
 "s": "152006",
@@ -1123,6 +1218,26 @@
 "s": "296433",
 "t": "Boden Juniper Bowl - Dark Amber",
 "u": "https://www.globewest.com.au/boden-juniper-bowl-dark-amber-dec-bod-juni-bowl"
+},
+"globewest-boden-urchin-large-bowl-chalk-pink": {
+"s": "259922",
+"t": "Boden Urchin Large Bowl - Chalk Pink",
+"u": "https://www.globewest.com.au/boden-urchin-large-bowl-chalk-pink-dec-bod-urc-bowl-lg"
+},
+"globewest-bower-mercer-rug-soft-umber": {
+"s": "295315",
+"t": "Bower Mercer Rug - Soft Umber",
+"u": "https://www.globewest.com.au/bower-mercer-rug-soft-umber-rug-bow-merc-x"
+},
+"globewest-bower-wren-stripe-rug-sunset": {
+"s": "298933",
+"t": "Bower Wren Stripe Rug - Sunset",
+"u": "https://www.globewest.com.au/bower-wren-stripe-rug-sunset-rug-bow-wren-str-x"
+},
+"globewest-brixton-dining-armchair-camel-blonde-oak": {
+"s": "303313",
+"t": "Brixton Dining Armchair - Camel - Blonde Oak",
+"u": "https://www.globewest.com.au/brixton-dining-arm-chair-camel-blonde-oak-ch-brix-arm-blonde-oak"
 },
 "globewest-brody-oval-mirror-new-oak": {
 "s": "149216",
@@ -1139,15 +1254,30 @@
 "t": "Brody Round Mirror - New Oak",
 "u": "https://www.globewest.com.au/brody-round-mirror-new-oak-mir-brody-rd"
 },
+"globewest-cara-barstool-chai-boucle-sugar-velvet": {
+"s": "270335",
+"t": "Cara Barstool - Chai Boucle - Sugar Velvet",
+"u": "https://www.globewest.com.au/cara-barstool-chai-boucle-sugar-velvet-bs-cara-x-sugar-velvet"
+},
 "globewest-charles-bedside-dusk": {
 "s": "294002",
 "t": "Charles Bedside - Dusk",
 "u": "https://www.globewest.com.au/charles-bedside-dusk-side-charles"
 },
+"globewest-chloe-bedside-snowgum": {
+"s": "113878",
+"t": "Chloe Bedside - Snowgum",
+"u": "https://www.globewest.com.au/chloe-bedside-snowgum-side-chlo"
+},
 "globewest-chloe-channel-bedside-chai": {
 "s": "185716",
 "t": "Chloe Channel Bedside - Chai",
 "u": "https://www.globewest.com.au/chloe-channel-bedside-chai-side-chlo-chan-x"
+},
+"globewest-cleo-dining-table-putty": {
+"s": "126279",
+"t": "Artie Wave Dining Tables - Putty",
+"u": "https://www.globewest.com.au/artie-wave-dining-tables-putty-dt-art-wav-x"
 },
 "globewest-cooper-office-chair-cedar-matt-sand": {
 "s": "295805",
@@ -1169,10 +1299,20 @@
 "t": "Easton Aurora Table Lamp - Rainbow Sandstone - Snow",
 "u": "https://www.globewest.com.au/easton-aurora-table-lamp-rainbow-sandstone-snow-lamp-easton-aur-tbl-snow"
 },
-"globewest-easton-curve-lamp-elm": {
-"s": "133797",
-"t": "Easton Curve Table Lamp - Elm",
-"u": "https://www.globewest.com.au/easton-curve-table-lamp-elm-lamp-easton-crv-tbl"
+"globewest-easton-axel-desk-lamp-black": {
+"s": "193223",
+"t": "Easton Axel Desk Lamp - Black",
+"u": "https://www.globewest.com.au/easton-axel-desk-lamp-black-lamp-easton-axe-dsk"
+},
+"globewest-easton-axel-desk-lamp-mocha": {
+"s": "193224",
+"t": "Easton Axel Desk Lamp - Mocha",
+"u": "https://www.globewest.com.au/easton-axel-desk-lamp-mocha-lamp-easton-axe-dsk"
+},
+"globewest-easton-canopy-table-lamp-pewter": {
+"s": "273646",
+"t": "Easton Canopy Table Lamp - Pewter",
+"u": "https://www.globewest.com.au/easton-canopy-table-lamp-pewter-lamp-easton-cpy-tbl"
 },
 "globewest-easton-curve-lamp-oyster-grey": {
 "s": "193221",
@@ -1189,6 +1329,21 @@
 "t": "Easton Dome Floor Lamp - Frappe",
 "u": "https://www.globewest.com.au/easton-dome-floor-lamp-frappe-lamp-easton-dome-flr"
 },
+"globewest-easton-echo-table-lamp-fog-moss": {
+"s": "279261",
+"t": "Easton Echo Table Lamp - Fog - Moss",
+"u": "https://www.globewest.com.au/easton-echo-table-lamp-fog-moss-lamp-easton-echo-tbl-moss"
+},
+"globewest-easton-echo-table-lamp-mocha-carob": {
+"s": "279265",
+"t": "Easton Echo Table Lamp - Mocha - Carob",
+"u": "https://www.globewest.com.au/easton-echo-table-lamp-mocha-carob-lamp-easton-echo-tbl-carob"
+},
+"globewest-easton-echo-table-lamp-pewter-cloud": {
+"s": "279266",
+"t": "Easton Echo Table Lamp - Pewter - Cloud",
+"u": "https://www.globewest.com.au/easton-echo-table-lamp-pewter-cloud-lamp-easton-echo-tbl-cloud"
+},
 "globewest-easton-ellipse-table-lamp-olive-green-travertine": {
 "s": "252262",
 "t": "Easton Ellipse Table Lamp - Olive Green - Travertine",
@@ -1199,25 +1354,170 @@
 "t": "Easton Ellipse Table Lamp - Toffee - Tuscan Marble",
 "u": "https://www.globewest.com.au/easton-ellipse-table-lamp-toffee-tuscan-marble-lamp-easton-ellip-tbl-tuscan-marble"
 },
+"globewest-easton-globe-table-lamp-brown-marble": {
+"s": "151368",
+"t": "Easton Globe Table Lamp - Brown Marble",
+"u": "https://www.globewest.com.au/easton-globe-table-lamp-brown-marble-lamp-easton-glb-tbl"
+},
+"globewest-easton-halo-desk-lamp-antique-brass": {
+"s": "238108",
+"t": "Easton Halo Desk Lamp - Antique Brass",
+"u": "https://www.globewest.com.au/easton-halo-desk-lamp-antique-brass-lamp-easton-halo-dsk"
+},
+"globewest-easton-hex-table-lamp-khaki-linen": {
+"s": "283579",
+"t": "Easton Hex Table Lamp - Khaki - Linen",
+"u": "https://www.globewest.com.au/easton-hex-table-lamp-khaki-linen-lamp-easton-hex-tbl-linen"
+},
+"globewest-easton-hex-table-lamp-mushroom-coco": {
+"s": "283580",
+"t": "Easton Hex Table Lamp - Mushroom - Coco",
+"u": "https://www.globewest.com.au/easton-hex-table-lamp-mushroom-coco-lamp-easton-hex-tbl-coco"
+},
 "globewest-easton-horizon-desk-lamp-travertine-taupe": {
 "s": "238007",
 "t": "Easton Horizon Desk Lamp - Travertine - Taupe",
 "u": "https://www.globewest.com.au/easton-horizon-desk-lamp-travertine-taupe-lamp-easton-horz-dsk-taupe"
+},
+"globewest-easton-ledger-table-lamp-wild-umber": {
+"s": "283581",
+"t": "Easton Ledger Table Lamp - Wild Umber",
+"u": "https://www.globewest.com.au/easton-ledger-table-lamp-wild-umber-lamp-easton-ledg-tbl"
+},
+"globewest-easton-luna-table-lamp-brown-marble-brunette": {
+"s": "267437",
+"t": "Easton Luna Table Lamp - Brown Marble - Brunette",
+"u": "https://www.globewest.com.au/easton-luna-table-lamp-brown-marble-brunette-lamp-easton-luna-tbl-brunette"
+},
+"globewest-easton-luna-table-lamp-mocha-travertine-pewter": {
+"s": "267436",
+"t": "Easton Luna Table Lamp - Mocha Travertine - Pewter",
+"u": "https://www.globewest.com.au/easton-luna-table-lamp-mocha-travertine-pewter-lamp-easton-luna-tbl-pewter"
 },
 "globewest-easton-lysa-table-lamp-sable": {
 "s": "192420",
 "t": "Easton Lysa Table Lamp - Sable",
 "u": "https://www.globewest.com.au/easton-lysa-table-lamp-sable-lamp-easton-lysa-tbl"
 },
+"globewest-easton-marble-table-lamp-white-marble-white-linen": {
+"s": "71273",
+"t": "Easton Marble Table Lamp - White Marble - White Linen",
+"u": "https://www.globewest.com.au/easton-marble-table-lamp-white-marble-white-linen-lamp-easton-mar-tbl-white-linen"
+},
+"globewest-easton-ornament-tall-portable-table-lamp-brick": {
+"s": "278959",
+"t": "Easton Ornament Tall Portable Table Lamp - Brick",
+"u": "https://www.globewest.com.au/easton-ornament-tl-portable-table-lamp-brick-lamp-easton-ornt-tl-por-tbl"
+},
+"globewest-easton-ornament-tall-portable-table-lamp-khaki": {
+"s": "296920",
+"t": "Easton Ornament Tall Portable Table Lamp - Khaki",
+"u": "https://www.globewest.com.au/easton-ornament-tall-portable-table-lamp-khaki-lamp-easton-ornt-tl-por-tbl"
+},
+"globewest-easton-ornament-tall-portable-table-lamp-mocha": {
+"s": "296921",
+"t": "Easton Ornament Tall Portable Table Lamp - Mocha",
+"u": "https://www.globewest.com.au/easton-ornament-tall-portable-table-lamp-mocha-lamp-easton-ornt-tl-por-tbl"
+},
+"globewest-easton-osha-table-lamp-tuscan-marble": {
+"s": "292903",
+"t": "Easton Osha Table Lamp - Tuscan Marble",
+"u": "https://www.globewest.com.au/easton-osha-table-lamp-tuscan-marble-lamp-easton-osha-tbl"
+},
+"globewest-easton-osha-table-lamp-zebra-marble": {
+"s": "292902",
+"t": "Easton Osha Table Lamp - Zebra Marble",
+"u": "https://www.globewest.com.au/easton-osha-table-lamp-zebra-marble-lamp-easton-osha-tbl"
+},
+"globewest-easton-pinnacle-table-lamp-russet-oyster-grey": {
+"s": "133800",
+"t": "Easton Pinnacle Table Lamp - Russet - Oyster Grey",
+"u": "https://www.globewest.com.au/easton-pinnacle-table-lamp-russet-oyster-grey-lamp-easton-pin-tbl-oyster-grey"
+},
+"globewest-easton-quinn-table-lamp-mocha-travertine-brick": {
+"s": "279262",
+"t": "Easton Quinn Table Lamp - Mocha Travertine - Brick",
+"u": "https://www.globewest.com.au/easton-quinn-tbl-lamp-mocha-travertine-brick-lamp-easton-quin-tbl-brick"
+},
+"globewest-easton-rowan-table-lamp-wild-mushroom": {
+"s": "283582",
+"t": "Easton Rowan Table Lamp - Wild Mushroom",
+"u": "https://www.globewest.com.au/easton-rowan-table-lamp-wild-mushroom-lamp-easton-rown-tbl"
+},
+"globewest-easton-stack-table-lamp-mushroom-marble-pecan": {
+"s": "279264",
+"t": "Easton Stack Table Lamp - Mushroom Marble - Pecan",
+"u": "https://www.globewest.com.au/easton-stack-table-lamp-mushroom-marble-pecan-lamp-easton-stac-tbl-pecan"
+},
+"globewest-easton-stack-table-lamp-travertine-linen": {
+"s": "279263",
+"t": "Easton Stack Table Lamp - Travertine - Linen",
+"u": "https://www.globewest.com.au/easton-stack-table-lamp-travertine-linen-lamp-easton-stac-tbl-linen"
+},
 "globewest-easton-tilt-table-lamp-travertine-antique-pewter": {
 "s": "274659",
 "t": "Easton Tilt Table Lamp - Travertine - Antique Pewter",
 "u": "https://www.globewest.com.au/easton-tilt-table-lamp-travertine-antique-pewter-lamp-easton-tbl-tilt-antique-pewter"
 },
+"globewest-eden-dining-chair-mint": {
+"s": "280873",
+"t": "Eden Dining Chair - Mint",
+"u": "https://www.globewest.com.au/eden-dining-chair-mint-ch-eden"
+},
+"globewest-eleanor-dining-chair-brick": {
+"s": "260231",
+"t": "Eleanor Dining Chair - Brick",
+"u": "https://www.globewest.com.au/eleanor-dining-chair-brick-ch-elea"
+},
+"globewest-eleanor-dining-chair-sunkissed": {
+"s": "283077",
+"t": "Eleanor Dining Chair - Sunkissed",
+"u": "https://www.globewest.com.au/eleanor-dining-chair-sunkissed-ch-elea"
+},
+"globewest-elio-canyon-table-lamp-steel-marble-ash": {
+"s": "273541",
+"t": "Elio Canyon Table Lamp - Steel Marble - Ash",
+"u": "https://www.globewest.com.au/elio-canyon-table-lamp-steel-marble-ash-lamp-elio-can-tbl-ash"
+},
+"globewest-elio-elfin-table-lamp-umber-linen": {
+"s": "273545",
+"t": "Elio Elfin Table Lamp - Umber - Linen",
+"u": "https://www.globewest.com.au/elio-elfin-table-lamp-umber-linen-lamp-elio-elf-tbl-linen"
+},
+"globewest-elio-revolve-table-lamp-maroon-marble-burgundy": {
+"s": "273542",
+"t": "Elio Revolve Table Lamp - Maroon Marble - Burgundy",
+"u": "https://www.globewest.com.au/elio-revolve-table-lamp-maroon-marble-burgundy-lamp-elio-rev-tbl-burgundy"
+},
+"globewest-elio-thread-table-lamp-maroon-marble-natural-jute": {
+"s": "273539",
+"t": "Elio Thread Table Lamp - Maroon Marble - Natural Jute",
+"u": "https://www.globewest.com.au/elio-thread-table-lamp-maroon-marble-natural-jute-lamp-elio-thr-tbl-natural-jute"
+},
+"globewest-elio-zemi-table-lamp-umber-linen": {
+"s": "273546",
+"t": "Elio Zemi Table Lamp - Umber - Linen",
+"u": "https://www.globewest.com.au/elio-zemi-table-lamp-umber-linen-lamp-elio-zem-tbl-linen"
+},
+"globewest-ember-dining-table-new-oak": {
+"s": "267529",
+"t": "Ember Dining Table - New Oak",
+"u": "https://www.globewest.com.au/ember-dining-table-new-oak-dt-emb-x"
+},
 "globewest-estelle-dining-chair-ecru-wheat-whisper": {
 "s": "283081",
 "t": "Estelle Dining Chair - Ecru Wheat - Whisper",
 "u": "https://www.globewest.com.au/estelle-dining-chair-ecru-wheat-whisper-ch-este-whisper"
+},
+"globewest-estelle-dining-chair-grove": {
+"s": "307411",
+"t": "Estelle Dining Chair - Grove",
+"u": "https://www.globewest.com.au/estelle-dining-chair-grove-ch-este"
+},
+"globewest-estelle-dining-chair-soft-russet": {
+"s": "251058",
+"t": "Estelle Dining Chair - Soft Russet",
+"u": "https://www.globewest.com.au/estelle-dining-chair-soft-russet-ch-este"
 },
 "globewest-flo-occasional-chair-brick-natural-ash": {
 "s": "152804",
@@ -1244,6 +1544,11 @@
 "t": "Flo Occasional Chair - Moonbeam - Natural Ash",
 "u": "https://www.globewest.com.au/flo-occasional-chair-moonbeam-natural-ash-ch-flo-occ-natural-ash"
 },
+"globewest-floe-coffee-table-tobacco-ash": {
+"s": "284788",
+"t": "Leon Frame Coffee Table - Tobacco Ash",
+"u": "https://www.globewest.com.au/leon-frame-coffee-table-tobacco-ash-ct-leon-fra"
+},
 "globewest-floyd-marble-bedside-onyx-travertine-sunwash": {
 "s": "302004",
 "t": "Floyd Marble Bedside - Onyx Travertine - Sunwash",
@@ -1269,20 +1574,85 @@
 "t": "Granada Hourglass Side Table - Black Fleck",
 "u": "https://www.globewest.com.au/granada-hourglass-side-table-black-fleck-lto-gran-hgl"
 },
-"globewest-hanson-contour-small-vase-sand": {
-"s": "214010",
-"t": "Hanson Contour Small Vase - Sand",
-"u": "https://www.globewest.com.au/hanson-contour-small-vase-sand-dec-han-con-vase-sm"
+"globewest-hanson-alo-planter-biscuit": {
+"s": "249260",
+"t": "Hanson Alo Planter - Biscuit",
+"u": "https://www.globewest.com.au/hanson-alo-planter-biscuit-dec-han-alo-plt"
+},
+"globewest-hanson-bobbin-vase-biscuit": {
+"s": "214004",
+"t": "Hanson Bobbin Vase - Biscuit",
+"u": "https://www.globewest.com.au/hanson-bobbin-vase-biscuit-dec-han-bob-vase"
+},
+"globewest-hanson-eden-set-of-3-bowls-mottled-white-multi": {
+"s": "167061",
+"t": "Hanson Eden Set of 3 Bowls - Mottled White Multi - Dotty White",
+"u": "https://www.globewest.com.au/hanson-eden-set-of-3-bowls-mottled-white-multi-dec-han-eden-bowl-s3-dotty-white"
+},
+"globewest-hanson-flute-set-of-2-planter-white-sand": {
+"s": "148630",
+"t": "Hanson Flute Set of 2 Planter - White Sand",
+"u": "https://www.globewest.com.au/hanson-flute-planter-set-of-2-white-sand-dec-han-flut-s2"
+},
+"globewest-hanson-mazie-small-vase-chocolate": {
+"s": "283995",
+"t": "Hanson Mazie Small Vase - Chocolate",
+"u": "https://www.globewest.com.au/hanson-mazie-small-vase-chocolate-dec-han-mazi-vase-sm"
+},
+"globewest-hanson-orb-set-of-3-sculptures-terra-multi": {
+"s": "164265",
+"t": "Hanson Orb Set of 3 Sculptures - Terra Multi",
+"u": "https://www.globewest.com.au/hanson-orb-set-of-3-sculpture-terra-multi-dec-han-orb-scul-s3"
+},
+"globewest-hanson-talua-planter-pearlseed": {
+"s": "301109",
+"t": "Hanson Talua Goblet Bowl - Pearlseed",
+"u": "https://www.globewest.com.au/hanson-talua-goblet-bowl-pearlseed-dec-han-talua-gob-bowl"
 },
 "globewest-harlow-office-chair-powder-blue-matt-bone": {
 "s": "154648",
 "t": "Harlow Office Chair - Powder Blue - Matt Bone",
 "u": "https://www.globewest.com.au/harlow-office-chair-powder-blue-matt-bone-ch-harl-off-matt-bone"
 },
+"globewest-helio-round-dining-table-smoked-ash-matt-rouge-marble": {
+"s": "266726",
+"t": "Helio Round Dining Table - Smoked Ash - Matt Rouge Marble",
+"u": "https://www.globewest.com.au/helio-round-dining-table-smoked-ash-matt-rouge-marble-dt-hel-rd-x-matt-rouge-marble"
+},
+"globewest-helio-side-table-smoked-ash-natural-travertine": {
+"s": "266727",
+"t": "Helio Side Table - Smoked Ash - Natural Travertine",
+"u": "https://www.globewest.com.au/helio-side-table-smoked-ash-natural-travertine-lto-hel-natural-travertine"
+},
+"globewest-hugo-remy-3-seater-sofa-noyack-thyme-dark-walnut": {
+"s": "275470",
+"t": "Hugo Remy 3 Seater Sofa - Noyack Thyme - Dark Walnut",
+"u": "https://www.globewest.com.au/hugo-remy-3-seater-sofa-noyack-thyme-dark-walnut-sof-hugo-rem3s-dark-walnut"
+},
 "globewest-hugo-rue-3-seater-sofa-field": {
 "s": "275438",
 "t": "Hugo Rue 3 Seater Sofa - Field",
 "u": "https://www.globewest.com.au/hugo-rue-3-seater-sofa-field-sof-hugo-rue3s"
+},
+"globewest-hugo-rue-3-seater-sofa-mint": {
+"s": "293628",
+"t": "Hugo Rue 3 Seater Sofa - Mint",
+"u": "https://www.globewest.com.au/hugo-rue-3-seater-sofa-mint-sof-hugo-rue3s"
+},
+"globewest-hugo-rue-3-seater-sofa-poker-chestnut": {
+"s": "283687",
+"t": "Hugo Rue 3 Seater Sofa - Poker Chestnut",
+"u": "https://www.globewest.com.au/hugo-rue-3-seater-sofa-poker-chestnut-sof-hugo-rue3s"
+},
+"globewest-hugo-sable-3-seater-sofa-soft-russet": {
+"s": "294903",
+"t": "Hugo Sable 3 Seater Sofa - Soft Russet",
+"u": "https://www.globewest.com.au/hugo-sable-3-seater-sofa-soft-russet-sof-hugo-sabl3s-3-seater"
+},
+"globewest-hugo-vera-4-seater-sofa-shiitake": {
+"s": "293626",
+"t": "Hugo Vera 4 Seater Sofa - Shiitake",
+"u": "https://www.globewest.com.au/hugo-vera-4-seater-sofa-shiitake-sof-hugo-vera4s"
 },
 "globewest-hugo-vera-4-seater-sofa-sunkissed": {
 "s": "247658",
@@ -1314,10 +1684,10 @@
 "t": "Jules Dining Armchair - Brick",
 "u": "https://www.globewest.com.au/jules-dining-armchair-brick-ch-jules-arm"
 },
-"globewest-jules-dining-armchair-nimbus": {
-"s": "209418",
-"t": "Jules Dining Armchair - Nimbus",
-"u": "https://www.globewest.com.au/jules-dining-armchair-nimbus-ch-jules-arm"
+"globewest-jules-dining-armchair-sandcastle-tweed": {
+"s": "283079",
+"t": "Jules Dining Armchair - Sandcastle Tweed",
+"u": "https://www.globewest.com.au/jules-dining-armchair-sandcastle-tweed-ch-jules-arm"
 },
 "globewest-jules-dining-chair-lichen-tweed": {
 "s": "260222",
@@ -1354,10 +1724,50 @@
 "t": "Juno Cloud Round Corner Sofa",
 "u": "https://www.globewest.com.au/juno-cloud-round-corner-sofa-brick-sof-jun-cloud-cnr-brc"
 },
+"globewest-juno-pebble-3-seater-sofa-clover": {
+"s": "293620",
+"t": "Juno Pebble 3 Seater Sofa - Clover",
+"u": "https://www.globewest.com.au/juno-pebble-3-seater-sofa-clover-sof-jun-peb3s"
+},
+"globewest-kin-1-drawer-2-door-buffet-shell": {
+"s": "152471",
+"t": "Kin 1 Drawer 2 Door Buffet - Shell",
+"u": "https://www.globewest.com.au/kin-1-drawer-2-door-buffet-shell-buf-kin-1dw2dr"
+},
+"globewest-kin-2-door-buffet-shell": {
+"s": "152472",
+"t": "Kin 2 Door Buffet - Shell",
+"u": "https://www.globewest.com.au/kin-2-door-buffet-shell-buf-kin-2dr"
+},
+"globewest-kin-2-drawer-4-door-buffet-steel-blue": {
+"s": "293907",
+"t": "Kin 2 Drawer 4 Door Buffet - Steel Blue",
+"u": "https://www.globewest.com.au/kin-2-drawer-4-door-buffet-steel-blue-buf-kin-2dw4dr"
+},
+"globewest-leon-coffee-table-powder-blue": {
+"s": "276463",
+"t": "Leon Coffee Table - Powder Blue",
+"u": "https://www.globewest.com.au/leon-coffee-table-powder-blue-cto-leon"
+},
+"globewest-leon-frame-marble-coffee-table-matt-ocean-marble-porcelain": {
+"s": "284786",
+"t": "Leon Frame Marble Coffee Table - Matt Ocean Marble - Porcelain",
+"u": "https://www.globewest.com.au/leon-frame-marble-coffee-table-matt-ocean-marble-porcelain-ct-leon-fra-mar-porcelain"
+},
+"globewest-leon-marble-coffee-table-grey-travertine-natural-ash": {
+"s": "293407",
+"t": "Leon Marble Side Table - Grey Travertine - Natural Ash",
+"u": "https://www.globewest.com.au/leon-marble-side-table-grey-travertine-natural-ash-lto-leon-mar-x-natural-ash"
+},
 "globewest-leon-side-table-natural-ash": {
 "s": "225304",
 "t": "Leon Side Table - Natural Ash",
 "u": "https://www.globewest.com.au/leon-side-table-natural-ash-lto-leon-x"
+},
+"globewest-leon-side-table-powder-blue": {
+"s": "246141",
+"t": "Leon Side Table - Powder Blue",
+"u": "https://www.globewest.com.au/leon-side-table-powder-blue-lto-leon-x"
 },
 "globewest-leon-side-table-teal": {
 "s": "258004",
@@ -1379,6 +1789,16 @@
 "t": "Lorne Canopy Table Lamp - Shiraz - Oatmeal",
 "u": "https://www.globewest.com.au/lorne-canopy-table-lamp-shiraz-oatmeal-lamp-lorne-cpy-tbl-oatmeal"
 },
+"globewest-lorne-canopy-table-lamp-shiraz-oatmeal": {
+"s": "278459",
+"t": "Lorne Canopy Table Lamp - Shiraz - Oatmeal",
+"u": "https://www.globewest.com.au/lorne-canopy-table-lamp-shiraz-oatmeal-lamp-lorne-cpy-tbl-oatmeal"
+},
+"globewest-lorne-canopy-table-lamp-snowgum-white": {
+"s": "171063",
+"t": "Lorne Canopy Table Lamp - Snowgum - White",
+"u": "https://www.globewest.com.au/lorne-canopy-table-lamp-snowgum-white-lamp-lorne-cpy-tbl-white"
+},
 "globewest-lorne-pebble-table-lamp-coco-saddle": {
 "s": "268333",
 "t": "Lorne Pebble Table Lamp - Coco - Saddle",
@@ -1389,10 +1809,20 @@
 "t": "Lorne Pebble Table Lamp - Powder Blue - Oatmeal",
 "u": "https://www.globewest.com.au/lorne-pebble-table-lamp-powder-blue-oatmeal-lamp-lorne-peb-tbl-oatmeal"
 },
+"globewest-lorne-retreat-table-lamp-coconut-linen": {
+"s": "267134",
+"t": "Lorne Retreat Table Lamp - Coconut - Linen",
+"u": "https://www.globewest.com.au/lorne-retreat-table-lamp-coconut-linen-lamp-lorne-retreat-tbl-linen"
+},
 "globewest-lorne-shore-table-lamp-sandy-chalk-ivory": {
 "s": "192020",
 "t": "Lorne Shore Table Lamp - Sandy Chalk - Ivory",
 "u": "https://www.globewest.com.au/lorne-shore-table-lamp-sandy-chalk-ivory-lamp-lorne-shor-tbl-ivory"
+},
+"globewest-madrid-slope-right-chaise-sofa-set-grey-speckle-boucle": {
+"s": "259822",
+"t": "Madrid Slope Right Chaise Set Sofa - Grey Speckle Boucle",
+"u": "https://www.globewest.com.au/madrid-slope-right-chaise-sofa-set-grey-speckle-boucle-sof-mad-slo-rit-chs-set"
 },
 "globewest-marion-swivel-occasional-chair": {
 "s": "294902",
@@ -1409,15 +1839,25 @@
 "t": "Marion Swivel Occasional Chair - Toasted Oat",
 "u": "https://www.globewest.com.au/marion-occasional-chair-toasted-oat-ch-marin-occ"
 },
-"globewest-matilda-barstool-linen-grey-matt-linen-grey": {
-"s": "151561",
-"t": "Matilda Barstool - Linen Grey - Matt Linen Grey",
-"u": "https://www.globewest.com.au/matilda-barstool-linen-grey-matt-linen-grey-bs-mat-x-matt-linen-grey"
+"globewest-marlow-buffet-chocolate-oak-brass": {
+"s": "254476",
+"t": "Marlow Buffet - Chocolate Oak - Brass",
+"u": "https://www.globewest.com.au/marlow-buffet-chocolate-oak-brass-buf-marlow-brass"
 },
 "globewest-matilda-dining-chair-burgundy-matt-carob": {
 "s": "154417",
 "t": "Matilda Dining Chair - Burgundy - Matt Carob",
 "u": "https://www.globewest.com.au/matilda-dining-chair-burgundy-matt-carob-ch-mat-matt-carob"
+},
+"globewest-miles-barstool-satin-oak": {
+"s": "280960",
+"t": "Miles Barstool - Satin Oak",
+"u": "https://www.globewest.com.au/miles-barstool-satin-oak-bs-miles-x"
+},
+"globewest-miller-storage-unit-slate-teal": {
+"s": "293704",
+"t": "Miller Storage Unit - Slate Teal",
+"u": "https://www.globewest.com.au/miller-storage-unit-slate-teal-buf2-mill"
 },
 "globewest-oakley-pebble-floor-mirror-monica-red-marble": {
 "s": "272238",
@@ -1439,10 +1879,25 @@
 "t": "Oakley Pebble Mirror - Ocean Marble",
 "u": "https://www.globewest.com.au/oakley-pebble-mirror-ocean-marble-mir-oak-peb"
 },
+"globewest-oberon-crescent-marble-bedside-satin-onyx-travertine-dusk": {
+"s": "294003",
+"t": "Oberon Crescent Marble Bedside - Satin Onyx Travertine - Dusk",
+"u": "https://www.globewest.com.au/oberon-crescent-marble-bedside-satin-onyx-travertine-dusk-side-ober-cres-mar-dusk"
+},
 "globewest-oberon-crescent-marble-buffet-natural-travertine-shell": {
 "s": "153163",
 "t": "Oberon Crescent Marble Buffet - Natural Travertine - Shell",
 "u": "https://www.globewest.com.au/oberon-crescent-marble-buffet-natural-travertine-shell-buf-ober-cres-mar-shell"
+},
+"globewest-oberon-crescent-marble-storage-unit-marine-marble-thyme": {
+"s": "277961",
+"t": "Oberon Cresent Marble Storage Unit - Marine Marble - Thyme",
+"u": "https://www.globewest.com.au/oberon-crescent-marble-storage-unit-marine-marble-thyme-buf-ober-cres-mar-sm-thyme"
+},
+"globewest-oberon-crescent-marble-storage-unit-matt-ocean-marble-shiraz": {
+"s": "277962",
+"t": "Oberon Cresent Marble Storage Unit - Matt Ocean Marble - Shiraz",
+"u": "https://www.globewest.com.au/oberon-crescent-marble-storage-unit-matt-ocean-marble-shiraz-buf-ober-cres-mar-sm-shiraz"
 },
 "globewest-oberon-crescent-marble-storage-unit-matt-ocean-marble-smoked-ash": {
 "s": "153162",
@@ -1453,6 +1908,21 @@
 "s": "153161",
 "t": "Oberon Crescent Marble Storage Unit - Natural Travertine - Shell",
 "u": "https://www.globewest.com.au/oberon-crescent-marble-storage-unit-natural-travertine-shell-buf-ober-cres-mar-sm-shell"
+},
+"globewest-oberon-curve-marble-coffee-table-marine-marble-thyme": {
+"s": "278861",
+"t": "Oberon Curve Marble Coffee Table - Marine Marble - Thyme",
+"u": "https://www.globewest.com.au/oberon-curve-marble-coffee-table-marine-marble-thyme-ct-ober-crv-mar-thyme"
+},
+"globewest-oberon-curve-marble-coffee-table-matt-ocean-marble-natural-ash": {
+"s": "263615",
+"t": "Oberon Curve Marble Coffee Table - Matt Ocean Marble - Natural Ash",
+"u": "https://www.globewest.com.au/oberon-curve-marble-coffee-table-matt-ocean-marble-natural-ash-ct-ober-crv-mar-natural-ash"
+},
+"globewest-oberon-curve-marble-nest-of-2-side-tables-natural-ash-matt-ocean-marble": {
+"s": "267329",
+"t": "Oberon Curve Marble Nest of 2 Side Table - Natural Ash - Matt Ocean Marble",
+"u": "https://www.globewest.com.au/oberon-curve-nest-marble-side-table-natural-ash-matt-ocean-marble-lt-ober-crv-s2-mar-matt-ocean-marble"
 },
 "globewest-oberon-curve-set-of-2-side-table-natural-ash": {
 "s": "130432",
@@ -1484,6 +1954,21 @@
 "t": "Pearce Desk - Bone",
 "u": "https://www.globewest.com.au/pearce-desk-bone-desk-pearce-x"
 },
+"globewest-pearce-marble-dresser-bone-matt-ocean-marble": {
+"s": "223195",
+"t": "Pearce Marble Console Table - Matt Ocean Marble - Bone",
+"u": "https://www.globewest.com.au/pearce-marble-console-matt-ocean-marble-bone-cons-pearce-x-bone"
+},
+"globewest-pedro-barstool-rosewood-matt-bronze": {
+"s": "296608",
+"t": "Pedro Barstool - Rosewood - Matt Bronze",
+"u": "https://www.globewest.com.au/pedro-barstool-rosewood-matt-bronze-bs-pedro-x-matt-bronze"
+},
+"globewest-pedro-barstool-toffee-weave-matt-bronze": {
+"s": "271935",
+"t": "Pedro Barstool - Toffee Weave - Matt Bronze",
+"u": "https://www.globewest.com.au/pedro-barstool-toffee-weave-matt-bronze-bs-pedro-x-matt-bronze"
+},
 "globewest-piccolo-barstool-fawn-speckle-matt-olive": {
 "s": "295816",
 "t": "Piccolo Barstool - Fawn Speckle - Matt Olive",
@@ -1508,6 +1993,11 @@
 "s": "247553",
 "t": "Piccolo Cantilever Dining Chair - Copeland Honey - Matt Bone",
 "u": "https://www.globewest.com.au/piccolo-cantilever-dining-chair-copeland-honey-matt-bone-ch-picc-cant-matt-bone"
+},
+"globewest-piccolo-dining-armchair-vintage-matt-dark-brown-pu-matt-syrah": {
+"s": "295822",
+"t": "Piccolo Dining Armchair - Vintage Matt Dark Brown PU - Matt Syrah",
+"u": "https://www.globewest.com.au/piccolo-dining-armchair-vintage-matt-dark-brown-pu-matt-syrah-ch-picc-arm-matt-syrah"
 },
 "globewest-piccolo-dining-chair-feather-speckle-matt-cashmere": {
 "s": "179866",
@@ -1534,11 +2024,6 @@
 "t": "Piccolo Spider Leg Office Chair - Chai Boucle - Matt Syrah",
 "u": "https://www.globewest.com.au/piccolo-spider-leg-office-chair-chai-boucle-matt-syrah-ch-picc-spi-off-matt-syrah"
 },
-"globewest-piccolo-spider-leg-office-chair-sandstone-pu-matt-cashmere": {
-"s": "201947",
-"t": "Piccolo Spider Leg Office Chair - Sandstone PU - Matt Cashmere",
-"u": "https://www.globewest.com.au/piccolo-spider-leg-office-chair-sandstone-pu-matt-cashmere-ch-picc-spi-off-matt-cashmere"
-},
 "globewest-pila-stackable-dining-chair-copeland-eucalyptus-1": {
 "s": "275972",
 "t": "Pila Stackable Dining Chair - Copeland Eucalyptus",
@@ -1549,20 +2034,40 @@
 "t": "Pippa Marble Coffee Table - Natural Travertine",
 "u": "https://www.globewest.com.au/pippa-marble-coffee-table-natural-travertine-cto-pippa-mar-x"
 },
+"globewest-pippa-trio-coffee-table-tobacco-ash": {
+"s": "248758",
+"t": "Pippa Trio Coffee Table - Tobacco Ash",
+"u": "https://www.globewest.com.au/pippa-trio-coffee-table-tobacco-ash-cto-pippa-tri-x"
+},
+"globewest-plum-swivel-barstool-eastwood-java-matt-syrah": {
+"s": "284087",
+"t": "Plum Swivel Barstool - Eastwood Java - Matt Syrah",
+"u": "https://www.globewest.com.au/plum-swivel-barstool-eastwood-java-matt-syrah-bs-plum-swv-x-matt-syrah"
+},
+"globewest-pluto-buffet-tobacco-ash": {
+"s": "276459",
+"t": "Pluto Buffet - Tobacco Ash",
+"u": "https://www.globewest.com.au/pluto-buffet-tobacco-ash-buf-plu"
+},
 "globewest-pluto-entertainment-unit-rosemary": {
 "s": "293602",
 "t": "Pluto Entertainment Unit - Rosemary",
 "u": "https://www.globewest.com.au/pluto-entertainment-unit-rosemary-tv-plu"
 },
+"globewest-ponte-console-table-golden-white-marble": {
+"s": "155852",
+"t": "Ponte Console Table - Golden White Marble",
+"u": "https://www.globewest.com.au/ponte-console-golden-white-marble-cons-pon-x"
+},
+"globewest-puddle-coffee-table-nero-marble": {
+"s": "292604",
+"t": "Puddle Coffee Table - Nero Marble",
+"u": "https://www.globewest.com.au/puddle-coffee-table-nero-marble-ct-pud-ioc-md"
+},
 "globewest-puddle-side-table-natural-travertine": {
 "s": "204933",
 "t": "Puddle Side Table - Natural Travertine",
 "u": "https://www.globewest.com.au/puddle-side-table-natural-travertine-lto-pud"
-},
-"globewest-quentin-spider-leg-office-chair-orion-matt-graphite": {
-"s": "247531",
-"t": "Quentin Spider Leg Office Chair - Orion - Matt Graphite",
-"u": "https://www.globewest.com.au/quentin-spider-leg-office-chair-orion-matt-graphite-ch-quen-spi-off-matt-graphite"
 },
 "globewest-quentin-spider-leg-office-chair-rosewood-matt-syrah": {
 "s": "247532",
@@ -1614,10 +2119,270 @@
 "t": "Ruben Occasional Chair - White Bark - Sugar Velvet",
 "u": "https://www.globewest.com.au/ruben-occasional-chair-white-bark-sugar-velvet-ch-ruben-occ-sugar-velvet"
 },
+"globewest-rufus-block-set-of-2-bookends-rosso-marble-mango-onyx": {
+"s": "297205",
+"t": "Rufus Block Set of 2 Bookends - Rosso Marble - Mango Onyx",
+"u": "https://www.globewest.com.au/rufus-block-set-of-2-bookends-rosso-marble-mango-onyx-dec-ruf-blo-book-s2-mango-onyx"
+},
+"globewest-rufus-border-tray-travertine": {
+"s": "157253",
+"t": "Rufus Border Tray - Travertine",
+"u": "https://www.globewest.com.au/rufus-border-tray-travertine-dec-ruf-bor-try-x"
+},
+"globewest-rufus-bubble-set-of-2-bookends-green-onyx": {
+"s": "262294",
+"t": "Rufus Bubble Set of 2 Bookends - Green Onyx",
+"u": "https://www.globewest.com.au/rufus-bubble-set-of-2-bookends-green-onyx-dec-ruf-bubb-book-s2"
+},
+"globewest-rufus-bulle-bowl-soapstone": {
+"s": "226808",
+"t": "Rufus Bulle Bowl - Soapstone",
+"u": "https://www.globewest.com.au/rufus-bulle-bowl-soapstone-dec-ruf-bull-bowl"
+},
+"globewest-rufus-bulle-vessel-soapstone": {
+"s": "226805",
+"t": "Rufus Bulle Vessel - Soapstone",
+"u": "https://www.globewest.com.au/rufus-bulle-vessel-soapstone-dec-ruf-bull-ves"
+},
+"globewest-rufus-contour-side-table-onyx-marble": {
+"s": "68926",
+"t": "Rufus Contour Side Table - Onyx Marble",
+"u": "https://www.globewest.com.au/rufus-contour-side-table-onyx-marble-lt-ruf-cont-mar"
+},
+"globewest-rufus-converge-sculpture-blush-mixed-marble": {
+"s": "262239",
+"t": "Rufus Converge Sculpture - Blush Mixed Marble",
+"u": "https://www.globewest.com.au/rufus-converge-sculpture-blush-mixed-marble-dec-ruf-conv-scul"
+},
+"globewest-rufus-converge-sculpture-emperador": {
+"s": "151088",
+"t": "Rufus Converge Sculpture - Emperador",
+"u": "https://www.globewest.com.au/rufus-converge-sculpture-emperador-dec-ruf-con-scul"
+},
+"globewest-rufus-curve-sculpture-rainforest-marble": {
+"s": "297220",
+"t": "Rufus Curve Sculpture - Rainforest Marble",
+"u": "https://www.globewest.com.au/rufus-curve-sculpture-rainforest-marble-dec-ruf-curv-scul"
+},
+"globewest-rufus-dasha-footed-bowl-dusty-rose-marble": {
+"s": "262269",
+"t": "Rufus Dasha Footed Bowl - Dusty Rose Marble",
+"u": "https://www.globewest.com.au/rufus-dasha-footed-bowl-dusty-rose-marble-dec-ruf-dash-ftd-bowl"
+},
+"globewest-rufus-dasha-footed-bowl-emperador": {
+"s": "262270",
+"t": "Rufus Dasha Footed Bowl - Emperador",
+"u": "https://www.globewest.com.au/rufus-dasha-footed-bowl-emperador-dec-ruf-dash-ftd-bowl"
+},
+"globewest-rufus-dasha-footed-bowl-travertine": {
+"s": "262271",
+"t": "Rufus Dasha Footed Bowl - Travertine",
+"u": "https://www.globewest.com.au/rufus-dasha-footed-bowl-travertine-dec-ruf-dash-ftd-bowl"
+},
+"globewest-rufus-ellery-set-of-2-bookends-blush-mixed-marble": {
+"s": "262233",
+"t": "Rufus Ellery Set of 2 Bookends - Blush Mixed Marble",
+"u": "https://www.globewest.com.au/rufus-ellery-set-of-2-bookends-blush-mixed-marble-dec-ruf-elle-book-s2"
+},
+"globewest-rufus-fleur-side-table-green-onyx": {
+"s": "227404",
+"t": "Rufus Fleur Side Table - Green Onyx",
+"u": "https://www.globewest.com.au/rufus-fleur-side-table-green-onyx-lto-ruf-flr-x"
+},
+"globewest-rufus-float-oval-tray-brown-vein-marble": {
+"s": "262284",
+"t": "Rufus Float Oval Tray - Brown Vein Marble",
+"u": "https://www.globewest.com.au/rufus-float-oval-tray-brown-vein-marble-dec-ruf-floa-ovl-tray"
+},
+"globewest-rufus-float-oval-tray-emperador": {
+"s": "262283",
+"t": "Rufus Float Oval Tray - Emperador",
+"u": "https://www.globewest.com.au/rufus-float-oval-tray-emperador-dec-ruf-floa-ovl-tray"
+},
+"globewest-rufus-float-oval-tray-pink-lagoon-marble": {
+"s": "262282",
+"t": "Rufus Float Oval Tray - Pink Lagoon Marble",
+"u": "https://www.globewest.com.au/rufus-float-oval-tray-pink-lagoon-marble-dec-ruf-floa-ovl-tray"
+},
+"globewest-rufus-float-round-tray-brown-vein-marble": {
+"s": "262290",
+"t": "Rufus Float Round Tray - Brown Vein Marble",
+"u": "https://www.globewest.com.au/rufus-float-round-tray-brown-vein-marble-dec-ruf-floa-rnd-tray"
+},
+"globewest-rufus-float-round-tray-emperador": {
+"s": "262289",
+"t": "Rufus Float Round Tray - Emperador",
+"u": "https://www.globewest.com.au/rufus-float-round-tray-emperador-dec-ruf-floa-rnd-tray"
+},
+"globewest-rufus-float-round-tray-pink-lagoon-marble": {
+"s": "262288",
+"t": "Rufus Float Round Tray - Pink Lagoon Marble",
+"u": "https://www.globewest.com.au/rufus-float-round-tray-pink-lagoon-marble-dec-ruf-floa-rnd-tray"
+},
+"globewest-rufus-float-sculpture-emperador": {
+"s": "262295",
+"t": "Rufus Float Sculpture - Emperador",
+"u": "https://www.globewest.com.au/rufus-float-sculpture-emperador-dec-ruf-floa-scul"
+},
+"globewest-rufus-float-sculpture-toronto-marble": {
+"s": "262296",
+"t": "Rufus Float Sculpture - Toronto Marble",
+"u": "https://www.globewest.com.au/rufus-float-sculpture-toronto-marble-dec-ruf-floa-scul"
+},
+"globewest-rufus-halo-sculpture-multi-travertine-black-marble": {
+"s": "207373",
+"t": "Rufus Halo Sculpture - Multi Travertine - Black Marble",
+"u": "https://www.globewest.com.au/rufus-halo-sculpture-multi-travertine-black-marble-dec-ruf-halo-scul-black-marble"
+},
+"globewest-rufus-indra-side-table-oat-marble": {
+"s": "227705",
+"t": "Rufus Indra Side Table - Oat Marble",
+"u": "https://www.globewest.com.au/rufus-indra-side-table-oat-marble-lto-ruf-indra-x"
+},
+"globewest-rufus-irregular-oval-tray-multi-travertine": {
+"s": "262278",
+"t": "Rufus Irregular Oval Tray - Multi Travertine",
+"u": "https://www.globewest.com.au/rufus-irregular-oval-tray-multi-travertine-dec-ruf-irre-ovl-tray"
+},
+"globewest-rufus-irregular-oval-tray-tawny-marble": {
+"s": "262277",
+"t": "Rufus Irregular Oval Tray - Tawny Marble",
+"u": "https://www.globewest.com.au/rufus-irregular-oval-tray-tawny-marble-dec-ruf-irre-ovl-tray"
+},
+"globewest-rufus-irregular-round-tray-multi-travertine": {
+"s": "262276",
+"t": "Rufus Irregular Round Tray - Multi Travertine",
+"u": "https://www.globewest.com.au/rufus-irregular-round-tray-multi-travertine-dec-ruf-irre-rnd-tray"
+},
+"globewest-rufus-irregular-round-tray-tawny-marble": {
+"s": "262275",
+"t": "Rufus Irregular Round Tray - Tawny Marble",
+"u": "https://www.globewest.com.au/rufus-irregular-round-tray-tawny-marble-dec-ruf-irre-rnd-tray"
+},
+"globewest-rufus-jewel-side-table-carmine-marble": {
+"s": "227706",
+"t": "Rufus Jewel Side Table - Carmine Marble",
+"u": "https://www.globewest.com.au/rufus-jewel-side-table-carmine-marble-lto-ruf-jwl-x"
+},
+"globewest-rufus-jewel-side-table-spider-green-marble": {
+"s": "227707",
+"t": "Rufus Jewel Side Table - Spider Green Marble",
+"u": "https://www.globewest.com.au/rufus-jewel-side-table-spider-green-marble-lto-ruf-jwl-x"
+},
+"globewest-rufus-juniper-sculpture-armani-marble": {
+"s": "297216",
+"t": "Rufus Juniper Sculpture - Armani Marble",
+"u": "https://www.globewest.com.au/rufus-juniper-sculpture-armani-marble-dec-ruf-junip-scul"
+},
+"globewest-rufus-link-marble-sculpture-chocolate-marble": {
+"s": "297202",
+"t": "Rufus Link Marble Sculpture - Chocolate Marble",
+"u": "https://www.globewest.com.au/rufus-link-marble-sculpture-chocolate-marble-dec-ruf-mar-link"
+},
+"globewest-rufus-link-marble-sculpture-verde-marble": {
+"s": "297203",
+"t": "Rufus Link Marble Sculpture - Verde Marble",
+"u": "https://www.globewest.com.au/rufus-link-marble-sculpture-verde-marble-dec-ruf-mar-link"
+},
+"globewest-rufus-link-marble-sculpture-white-marble": {
+"s": "92147",
+"t": "Rufus Link Marble Sculpture - White Marble",
+"u": "https://www.globewest.com.au/rufus-link-marble-sculpture-white-marble-dec-ruf-mar-link"
+},
+"globewest-rufus-link-oval-tray-oat-marble": {
+"s": "297228",
+"t": "Rufus Link Oval Tray - Oat Marble",
+"u": "https://www.globewest.com.au/rufus-link-oval-tray-oat-marble-dec-ruf-link-oval-tray"
+},
+"globewest-rufus-link-oval-tray-rainforest-marble": {
+"s": "297227",
+"t": "Rufus Link Oval Tray - Rainforest Marble",
+"u": "https://www.globewest.com.au/rufus-link-oval-tray-rainforest-marble-dec-ruf-link-oval-tray"
+},
+"globewest-rufus-link-round-tray-oat-marble": {
+"s": "297224",
+"t": "Rufus Link Round Tray - Oat Marble",
+"u": "https://www.globewest.com.au/rufus-link-round-tray-oat-marble-dec-ruf-link-rnd-tray"
+},
+"globewest-rufus-link-round-tray-rainforest-marble": {
+"s": "297223",
+"t": "Rufus Link Round Tray - Rainforest Marble",
+"u": "https://www.globewest.com.au/rufus-link-round-tray-rainforest-marble-dec-ruf-link-rnd-tray"
+},
+"globewest-rufus-lunar-rectangle-bowl-white-marble": {
+"s": "152149",
+"t": "Rufus Lunar Rectangle Bowl - White Marble",
+"u": "https://www.globewest.com.au/rufus-lunar-rectangle-bowl-white-marble-dec-ruf-lun-rec-bowl-x"
+},
+"globewest-rufus-ondine-oval-wall-mirror-multi-travertine-emperador": {
+"s": "297237",
+"t": "Rufus Ondine Oval Wall Mirror - Multi Travertine - Emperador",
+"u": "https://www.globewest.com.au/rufus-ondine-oval-wall-mirror-multi-travertine-emperador-mir-ruf-ond-oval-emperador"
+},
+"globewest-rufus-pierce-bowl-soapstone": {
+"s": "297235",
+"t": "Rufus Pierce Bowl - Soapstone",
+"u": "https://www.globewest.com.au/rufus-pierce-bowl-soapstone-dec-ruf-pierce-bowl"
+},
+"globewest-rufus-pierce-bowl-verde-marble": {
+"s": "297234",
+"t": "Rufus Pierce Bowl - Verde Marble",
+"u": "https://www.globewest.com.au/rufus-pierce-bowl-verde-marble-dec-ruf-pierce-bowl"
+},
+"globewest-rufus-ribbs-low-plinth-emperador": {
+"s": "262265",
+"t": "Rufus Ribbs Low Plinth - Emperador",
+"u": "https://www.globewest.com.au/rufus-ribbs-low-plinth-emperador-dec-ruf-ribb-pli-lw"
+},
+"globewest-rufus-ribbs-tall-plinth-emperador": {
+"s": "262267",
+"t": "Rufus Ribbs Tall Plinth - Emperador",
+"u": "https://www.globewest.com.au/rufus-ribbs-tall-plinth-emperador-dec-ruf-ribb-pli-tl"
+},
+"globewest-rufus-sol-sculpture-blush-mixed-marble": {
+"s": "262241",
+"t": "Rufus Sol Sculpture - Blush Mixed Marble",
+"u": "https://www.globewest.com.au/rufus-sol-sculpture-blush-mixed-marble-dec-ruf-soli-scul-sm"
+},
+"globewest-rufus-sol-sculpture-emperador": {
+"s": "151097",
+"t": "Rufus Sol Sculpture - Emperador",
+"u": "https://www.globewest.com.au/rufus-sol-sculpture-emperador-dec-ruf-sol-scul-x"
+},
+"globewest-rufus-stratum-vase-large-carmine-marble": {
+"s": "261616",
+"t": "Rufus Stratum Vase Large - Carmine Marble",
+"u": "https://www.globewest.com.au/rufus-stratum-vase-large-carmine-marble-dec-ruf-str-vase-lg"
+},
+"globewest-rufus-stratum-vase-small-black-marble": {
+"s": "207361",
+"t": "Rufus Stratum Vase Small - Black Marble",
+"u": "https://www.globewest.com.au/rufus-stratum-vase-small-black-marble-dec-ruf-str-vase-sm"
+},
+"globewest-rufus-vault-sculpture-rainbow-sandstone": {
+"s": "207363",
+"t": "Rufus Vault Sculpture - Rainbow Sandstone",
+"u": "https://www.globewest.com.au/rufus-vault-sculpture-rainbow-sandstone-dec-ruf-vut-scul"
+},
+"globewest-rufus-zelda-sculpture-armani-marble": {
+"s": "297207",
+"t": "Rufus Zelda Sculpture - Armani Marble",
+"u": "https://www.globewest.com.au/rufus-zelda-sculpture-armani-marble-dec-ruf-zel-scul"
+},
+"globewest-rye-dining-armchair-nori-matt-nori": {
+"s": "275766",
+"t": "Rye Dining Armchair - Nori - Matt Nori",
+"u": "https://www.globewest.com.au/rye-dining-armchair-nori-matt-nori-ch-rye-arm-matt-nori"
+},
 "globewest-saskia-side-table-lilac": {
 "s": "290799",
 "t": "Saskia Side Table - Lilac",
 "u": "https://www.globewest.com.au/saskia-side-table-lilac-lto-sask"
+},
+"globewest-saskia-side-table-slate-teal": {
+"s": "309609",
+"t": "Saskia Side Table - Slate Teal",
+"u": "https://www.globewest.com.au/saskia-side-table-slate-teal-lto-sask"
 },
 "globewest-seb-oval-desk-oak": {
 "s": "199229",
@@ -1628,6 +2393,56 @@
 "s": "211928",
 "t": "Seb Oval Desk - Walnut",
 "u": "https://www.globewest.com.au/seb-oval-desk-walnut-desk-seb-ovl-x"
+},
+"globewest-seb-pebble-extendable-dining-table-oak": {
+"s": "263717",
+"t": "Seb Pebble Extendable Dining Table - Oak",
+"u": "https://www.globewest.com.au/sbe-pebble-extendable-dining-table-oak-dt-seb-peb-x"
+},
+"globewest-sedona-block-table-lamp-jade-marble-sage-glass": {
+"s": "293205",
+"t": "Sedona Block Table Lamp - Jade Marble - Sage Glass",
+"u": "https://www.globewest.com.au/sedona-block-table-lamp-jade-marble-sage-glass-lamp-sedo-blo-sage-glass"
+},
+"globewest-sedona-block-table-lamp-oat-marble-nude-glass": {
+"s": "293206",
+"t": "Sedona Block Table Lamp - Oat Marble - Nude Glass",
+"u": "https://www.globewest.com.au/sedona-block-table-lamp-oat-marble-nude-glass-lamp-sedo-blo-nude-glass"
+},
+"globewest-sedona-kennedy-table-lamp-natural-gloss-coconut": {
+"s": "293212",
+"t": "Sedona Kennedy Table Lamp - Natural - Gloss Coconut",
+"u": "https://www.globewest.com.au/sedona-kennedy-table-lamp-natural-gloss-coconut-lamp-sedo-ken-gloss-coconut"
+},
+"globewest-sedona-kennedy-table-lamp-walnut-matt-puce": {
+"s": "293213",
+"t": "Sedona Kennedy Table Lamp - Walnut - Matt Puce",
+"u": "https://www.globewest.com.au/sedona-kennedy-table-lamp-walnut-matt-puce-lamp-sedo-ken-matt-puce"
+},
+"globewest-sedona-ripple-table-lamp-brushed-nickle": {
+"s": "301907",
+"t": "Sedona Ripple Table Lamp - Brushed Nickle",
+"u": "https://www.globewest.com.au/sedona-ripple-table-lamp-brushed-nickle-lamp-sedo-ripp"
+},
+"globewest-sedona-ripple-table-lamp-matt-puce": {
+"s": "301908",
+"t": "Sedona Ripple Table Lamp - Matt Puce",
+"u": "https://www.globewest.com.au/sedona-ripple-table-lamp-matt-puce-lamp-sedo-ripp"
+},
+"globewest-sedona-rouge-table-lamp-walnut-amber-glass": {
+"s": "293218",
+"t": "Sedona Rouge Table Lamp - Walnut - Amber Glass",
+"u": "https://www.globewest.com.au/sedona-rouge-table-lamp-walnut-amber-glass-lamp-sedo-rou-amber-glass"
+},
+"globewest-sedona-scout-table-desk-lamp-chocolate-marble-matt-puce": {
+"s": "293216",
+"t": "Sedona Scout Table Desk Lamp - Chocolate Marble - Matt Puce",
+"u": "https://www.globewest.com.au/sedona-scout-table-lamp-chocolate-marble-matt-puce-lamp-sedo-sco-matt-puce"
+},
+"globewest-sedona-scout-table-desk-lamp-oat-marble-brushed-nickle": {
+"s": "293217",
+"t": "Sedona Scout Table Desk Lamp - Oat Marble - Brushed Nickle",
+"u": "https://www.globewest.com.au/sedona-scout-table-lamp-oat-marble-brushed-nickle-lamp-sedo-sco-brushed-nickle"
 },
 "globewest-shoreline-3-seater-sofa-outdoor-sand-fleck-hickory": {
 "s": "287597",
@@ -1654,15 +2469,25 @@
 "t": "Piccolo Spider Leg Office Chair - Carbon Tweed - Matt Graphite",
 "u": "https://www.globewest.com.au/piccolo-spider-leg-office-chair-carbon-tweed-matt-graphite-ch-picc-spi-off-matt-graphite"
 },
-"globewest-spider-leg-office-chair-sandstone-pu-matt-cashmere": {
-"s": "201947",
-"t": "Piccolo Spider Leg Office Chair - Sandstone PU - Matt Cashmere",
-"u": "https://www.globewest.com.au/piccolo-spider-leg-office-chair-sandstone-pu-matt-cashmere-ch-picc-spi-off-matt-cashmere"
-},
 "globewest-suki-occasional-chair-river-birch": {
 "s": "295902",
 "t": "Suki Swivel Occasional Chair - River Birch",
 "u": "https://www.globewest.com.au/suki-occasional-chair-river-birch-ch-suki-occ"
+},
+"globewest-suki-swivel-occasional-chair-rum-raisin": {
+"s": "295903",
+"t": "Suki Swivel Occasional Chair - Rum Raisin",
+"u": "https://www.globewest.com.au/suki-occasional-chair-rum-raisin-ch-suki-occ"
+},
+"globewest-teddy-glass-coffee-table-clear-tempered-glass-brick": {
+"s": "263815",
+"t": "Teddy Coffee Table - Clear Tempered Glass - Brick",
+"u": "https://www.globewest.com.au/teddy-glass-coffee-table-clear-tempered-glass-brick-ct-teddy-x-brick"
+},
+"globewest-tepih-alba-rug-safari": {
+"s": "299003",
+"t": "Tepih Alba Rug - Safari",
+"u": "https://www.globewest.com.au/tepih-alba-rug-safari-rug-tep-alba-x"
 },
 "globewest-tepih-dune-round-rug-oatmeal": {
 "s": "246131",
@@ -1673,6 +2498,11 @@
 "s": "295310",
 "t": "Tepih Everest Rug - Wheat",
 "u": "https://www.globewest.com.au/tepih-everest-rug-wheat-rug-tep-ever"
+},
+"globewest-tepih-lennox-rug-russet": {
+"s": "298923",
+"t": "Tepih Lennox Rug - Russet",
+"u": "https://www.globewest.com.au/tepih-lennox-rug-russet-rug-tep-lenn-x"
 },
 "globewest-tepih-round-rug-ivory": {
 "s": "50296",
@@ -1689,6 +2519,11 @@
 "t": "Tito Ottoman - Ice Boucle",
 "u": "https://www.globewest.com.au/tito-ottoman-ice-boucle-ott-tito"
 },
+"globewest-tolv-glide-barstool-pecan-leather-espresso-oak": {
+"s": "275860",
+"t": "Tolv Glide Barstool - Pecan Leather - Espresso Oak",
+"u": "https://www.globewest.com.au/tolv-glide-barstool-pecan-leather-espresso-oak-bs-ske-gli-arm-lw2-espresso-oak"
+},
 "globewest-tolv-inlay-upholstered-barstool-pecan-leather-light-oak": {
 "s": "134519",
 "t": "Tolv Inlay Upholstered Barstool - Pecan Leather - Light Oak",
@@ -1698,6 +2533,36 @@
 "s": "291397",
 "t": "Tolv Islet Tall Side Table - Light Oak",
 "u": "https://www.globewest.com.au/tolv-islet-tall-side-table-light-oak-lt-tolv-islet-tl"
+},
+"globewest-tolv-luk-barstool-bison-oak-natural-rattan": {
+"s": "294608",
+"t": "Tolv Luk Barstool - Bison Oak - Natural Rattan",
+"u": "https://www.globewest.com.au/tolv-luk-rattan-barstool-bison-oak-natural-rattan-bs-tolv-luk-x-natural-rattan"
+},
+"globewest-tolv-pensive-2-seater-sofa-pecan-leather-light-oak": {
+"s": "122768",
+"t": "Tolv Pensive 3 Seater Sofa - Limestone Leather - Light Oak",
+"u": "https://www.globewest.com.au/tolv-pensive-3-seater-sofa-limestone-leather-light-oak-sof-tolv-pen3s-light-oak"
+},
+"globewest-tolv-pinta-upholstered-barstool-arena-leather-light-oak": {
+"s": "275864",
+"t": "Tolv Pinta Upholstered Barstool - Arena Leather - Light Oak",
+"u": "https://www.globewest.com.au/tolv-pinta-upholstered-barstool-arena-leather-light-oak-bs-ske-pin-uph-x-light-oak"
+},
+"globewest-tolv-wren-occasional-chair-earth-bison-oak": {
+"s": "276264",
+"t": "Tolv Wren Occasional Chair - Earth - Bison Oak",
+"u": "https://www.globewest.com.au/tolv-wren-occasional-chair-earth-bison-oak-ch-tolv-wren-occ-bison-oak"
+},
+"globewest-tova-occasional-chair-moonbeam": {
+"s": "280863",
+"t": "Tova Occasional Chair - Moonbeam",
+"u": "https://www.globewest.com.au/tova-occasional-chair-moonbeam-ch-tova-occ"
+},
+"globewest-trove-bridge-buffet-natural": {
+"s": "268829",
+"t": "Trove Bridge Buffet - Natural",
+"u": "https://www.globewest.com.au/trove-bridge-buffet-natural-buf-trov-brg"
 },
 "globewest-trove-burl-bedside-light-burl": {
 "s": "152858",
@@ -1729,6 +2594,16 @@
 "t": "Valencia Weave Dining Armchair - Carbon Grey",
 "u": "https://www.globewest.com.au/valencia-weave-dining-armchair-carbon-grey-ch-vale-weave-arm"
 },
+"globewest-venus-revolve-coffee-table-emperador-marble": {
+"s": "244818",
+"t": "Venus Revolve Coffee Table - Emperador Marble",
+"u": "https://www.globewest.com.au/venus-revolve-coffee-table-emperador-marble-cto-venus-rev-x"
+},
+"globewest-venus-revolve-side-table-emperador-marble": {
+"s": "244819",
+"t": "Venus Revolve Side Table - Emperador Marble",
+"u": "https://www.globewest.com.au/venus-revolve-side-table-emperador-marble-lto-venus-rev-x"
+},
 "globewest-verona-flow-mirror-antique-brass": {
 "s": "106603",
 "t": "Verona Wave Mirror - Antique Brass",
@@ -1739,15 +2614,15 @@
 "t": "Verona Abstract Mirror - Black",
 "u": "https://www.globewest.com.au/verona-abstract-mirror-black-mir-vero-abs-x"
 },
+"globewest-vittoria-elliot-4-seater-sofa-staunch-almond-natural-ash": {
+"s": "268630",
+"t": "Vittoria Elliot 4 Seater Sofa - Staunch Almond - Natural Ash",
+"u": "https://www.globewest.com.au/vittoria-elliot-4-seater-sofa-staunch-almond-natural-ash-sof-vit-elio4s-natural-ash"
+},
 "globewest-willa-console-satin-oak": {
 "s": "191719",
 "t": "Willa Console - Satin Oak",
 "u": "https://www.globewest.com.au/willa-console-satin-oak-cons-willa"
-},
-"globewest-willa-entertainment-unit-satin-oak": {
-"s": "191720",
-"t": "Willa Entertainment Unit - Satin Oak",
-"u": "https://www.globewest.com.au/willa-entertainment-unit-satin-oak-tv-willa"
 },
 "globewest-willa-marble-buffet-satin-oak": {
 "s": "191619",
@@ -1758,6 +2633,11 @@
 "s": "147441",
 "t": "Suspend Side Table - Bone",
 "u": "https://www.globewest.com.au/suspend-side-table-bone-lto-susp"
+},
+"globewest-willa-occasional-chair-moonbeam-camel": {
+"s": "295904",
+"t": "Willa Occasional Chair - Moonbeam - Camel",
+"u": "https://www.globewest.com.au/willa-occasional-chair-moonbeam-camel-ch-willa-occ-camel"
 },
 "globewest-winona-occasional-chair-caramel-latte": {
 "s": "155752",
@@ -1773,6 +2653,11 @@
 "s": "152887",
 "t": "Winona Swivel Occasional Chair - Willow",
 "u": "https://www.globewest.com.au/winona-occasional-chair-willow-ch-win-occ"
+},
+"globewest-winona-swivel-occasional-chair-toffee-weave": {
+"s": "275765",
+"t": "Winona Swivel Occasional Chair - Toffee Weave",
+"u": "https://www.globewest.com.au/winona-occasional-chair-toffee-weave-ch-win-occ"
 },
 "globewest-zola-bench-seat-sand-speckle": {
 "s": "158458",
@@ -1823,11 +2708,6 @@
 "s": "151503",
 "t": "Leon Dining Table - Porcelain",
 "u": "https://www.globewest.com.au/leon-dining-table-porcelain-dt-leon-x"
-},
-"livorno-luna-side-table-sage-speckle": {
-"s": "126144",
-"t": "Livorno Luna Side Table - Sage Speckle",
-"u": "https://www.globewest.com.au/livorno-luna-side-table-sage-speckle-lt-liv-luna"
 },
 "mauritius-wing-occasional-chair-moss": {
 "s": "76848",
@@ -1939,6 +2819,11 @@
 "t": "Rowan Occasional Chair - Copeland Hazel - Black Metal",
 "u": "https://www.globewest.com.au/rowan-occasional-chair-copeland-hazel-black-metal-ch-rowan-occ-black-metal"
 },
+"rufus-curve-set-of-2-bookends-spider-green-marble": {
+"s": "186216",
+"t": "Rufus Curve Set of 2 Bookends - Spider Green Marble",
+"u": "https://www.globewest.com.au/rufus-curve-set-of-2-bookends-spider-green-marble-dec-ruf-crv-book-s2"
+},
 "rufus-fleur-side-table-carmine-marble": {
 "s": "227504",
 "t": "Rufus Fleur Side Table - Carmine Marble",
@@ -1958,6 +2843,11 @@
 "s": "151979",
 "t": "Rufus Rovine Set of 2 Bookends - Travertine",
 "u": "https://www.globewest.com.au/rufus-rovine-set-of-2-bookends-travertine-dec-ruf-rov-book-s2"
+},
+"rufus-vault-sculpture-carmine-marble-w225-x-d85-x-h210mm": {
+"s": "261617",
+"t": "Rufus Vault Sculpture - Carmine Marble",
+"u": "https://www.globewest.com.au/rufus-vault-sculpture-carmine-marble-dec-ruf-vut-scul"
 },
 "seb-balance-coffee-table-oak": {
 "s": "187016",
