@@ -884,11 +884,6 @@
 "t": "Oberon Crescent Marble Bedside - Natural Travertine - Shell",
 "u": "https://www.globewest.com.au/oberon-crescent-marble-bedside-natural-travertine-shell-side-ober-cres-mar-shell"
 },
-"globe-west-oberon-curve-marble-coffee-table-matt-ocean-marble-natural-ash": {
-"s": "263615",
-"t": "Oberon Curve Marble Coffee Table - Matt Ocean Marble - Natural Ash",
-"u": "https://www.globewest.com.au/oberon-curve-marble-coffee-table-matt-ocean-marble-natural-ash-ct-ober-crv-mar-natural-ash"
-},
 "globe-west-oberon-curve-marble-coffee-table-matt-storm-marble-matt-dark-oak": {
 "s": "133255",
 "t": "Oberon Curve Marble Coffee Table - Matt Storm Marble - Matt Dark Oak",
@@ -1594,6 +1589,11 @@
 "t": "Hanson Flute Set of 2 Planter - White Sand",
 "u": "https://www.globewest.com.au/hanson-flute-planter-set-of-2-white-sand-dec-han-flut-s2"
 },
+"globewest-hanson-hako-large-vase-tawny-stripe": {
+"s": "214013",
+"t": "Hanson Hako Large Vase - Tawny Stripe",
+"u": "https://www.globewest.com.au/hanson-hako-large-vase-tawny-stripe-dec-han-hak-vase-lg"
+},
 "globewest-hanson-mazie-small-vase-chocolate": {
 "s": "283995",
 "t": "Hanson Mazie Small Vase - Chocolate",
@@ -1729,11 +1729,6 @@
 "t": "Juno Pebble 3 Seater Sofa - Clover",
 "u": "https://www.globewest.com.au/juno-pebble-3-seater-sofa-clover-sof-jun-peb3s"
 },
-"globewest-kin-1-drawer-2-door-buffet-shell": {
-"s": "152471",
-"t": "Kin 1 Drawer 2 Door Buffet - Shell",
-"u": "https://www.globewest.com.au/kin-1-drawer-2-door-buffet-shell-buf-kin-1dw2dr"
-},
 "globewest-kin-2-door-buffet-shell": {
 "s": "152472",
 "t": "Kin 2 Door Buffet - Shell",
@@ -1743,6 +1738,11 @@
 "s": "293907",
 "t": "Kin 2 Drawer 4 Door Buffet - Steel Blue",
 "u": "https://www.globewest.com.au/kin-2-drawer-4-door-buffet-steel-blue-buf-kin-2dw4dr"
+},
+"globewest-kora-dining-chair-cream-weave-new-oak": {
+"s": "267729",
+"t": "Kora Dining Chair - Cream Weave - New Oak2",
+"u": "https://www.globewest.com.au/kora-dining-chair-cream-weave-new-oak2-ch-kora-new-oak2"
 },
 "globewest-leon-coffee-table-powder-blue": {
 "s": "276463",
@@ -1823,11 +1823,6 @@
 "s": "259822",
 "t": "Madrid Slope Right Chaise Set Sofa - Grey Speckle Boucle",
 "u": "https://www.globewest.com.au/madrid-slope-right-chaise-sofa-set-grey-speckle-boucle-sof-mad-slo-rit-chs-set"
-},
-"globewest-marion-swivel-occasional-chair": {
-"s": "294902",
-"t": "Marion Swivel Occasional Chair - Clover",
-"u": "https://www.globewest.com.au/marion-occasional-chair-clover-ch-marin-occ"
 },
 "globewest-marion-swivel-occasional-chair-clover-velvet": {
 "s": "294902",
@@ -2383,6 +2378,11 @@
 "s": "309609",
 "t": "Saskia Side Table - Slate Teal",
 "u": "https://www.globewest.com.au/saskia-side-table-slate-teal-lto-sask"
+},
+"globewest-seb-balance-dining-table-oak-natural": {
+"s": "249961",
+"t": "Seb Balance Dining Table - Oak",
+"u": "https://www.globewest.com.au/seb-balance-dining-table-oak-dt-seb-bal2-x"
 },
 "globewest-seb-oval-desk-oak": {
 "s": "199229",
